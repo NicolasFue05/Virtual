@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Vortex</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/CSS/Styles.css">
 </head>
 <body>
     <header>
         <div class="header__logo">
-            <img src="/Graphical Resouces/Main/Logo.png" alt="">
+            <img src="/GraphicalResouces/Main/Logo.png" alt="Logo" class="logo__image">
         </div>
         <div class="header__name">
-            <h1>Virtual Vortex</h1>
+            <h1 class="name__title">Virtual Vortex</h1>
         </div>
         <div class="header__menu">
             <a href="#">
-                <i class="fa-regular fa-bars" style="color: black; width: 30px;"></i>
+                <img src="/GraphicalResouces/Main/MenuIcon.png" alt="MenuIcon" class="menu__image">
             </a>
         </div>
     </header>
@@ -26,7 +26,11 @@
         <section id="main__welcome">
             <!-- Poner Imagen En CSS -->
             <div class="welcome__text">
-                <p>WELCOME!</p>
+                <p>
+                    WELCOME TO 
+                <br>
+                    VIRTUAL VORTEX
+                </p>
             </div>
         </section>
         <!-- Lo Mejor De La Pagina -->
@@ -38,7 +42,11 @@
             </div>
             <!-- Añadir Carrusel -->
             <div class="theBest__games">
-                <div class="theBest__button__left"></div>
+                <div class="theBest__button__left">
+                    <a href="#">
+                        <img src="/Graphical Resouces/Main/RowLeft.png" alt="">
+                    </a>
+                </div>
                 <div class="games__cyberpunk2077">
                     <!-- Front Page CSS -->
                     <div class="cyberpunk2077__info">
@@ -57,7 +65,7 @@
                 </div>
                 <div class="games__button">
                     <a href="#">
-                        
+                        <img src="/Graphical Resouces/Main/RowRight.png" alt="">
                     </a>
                 </div>
             </div>
@@ -69,6 +77,11 @@
                 </h1>
             </div>
             <div class="pre-order__games">
+                <div class="games__button">
+                    <a href="#">
+                        <img src="/Graphical Resouces/Main/RowLeft.png" alt="">
+                    </a>
+                </div>
                 <div class="games__bodycam">
                     <div class="bodycam__info">
                         <p class="info__name">BodyCam</p>
@@ -79,8 +92,106 @@
                         <p class="info__date">December/2025</p>
                         <p class="info__price">$300.000</p>
                 </div>
+                <div class="games__button">
+                    <a href="#">
+                        <img src="/Graphical Resouces/Main/RowRight.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="more__info">
+            <h1 class="info__title">
+                See More
+            </h1>
+            <div class="more__info__elements">
+                <div class="elements__allGames">
+                    <a href="#">
+                        <p>
+                            Games
+                        </p>
+                    </a>
+                </div>
+                <div class="elements__discounts">
+                    <a href="#">
+                        <p>
+                            Discounts
+                        </p>
+                    </a>
+                </div>
+                <div class="elements__membership">
+                    <a href="#">
+                        <p>
+                            Vortex Membership
+                        </p>
+                    </a>
+                </div>
+                <div class="elements__news">
+                    <a href="#">
+                        <p>
+                            News
+                        </p>
+                    </a>
+                </div>
+                <div class="elements__service">
+                    <a href="#">
+                        <img src="/Graphical Resouces/Main/Services.png" alt="">
+                        <p>
+                            Service
+                        </p>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="logo__container">
+            <img src="/Graphical Resouces/Main/Logo.png" alt="Logo">
+        </div>
+        <section class="footer__info">
+            <div class="footer__info__elements">
+                <div class="elements__contact">
+                    <a href="#">
+                        Contact
+                    </a>
+                </div>
+                <div class="elements__social">
+                    <a href="#">
+                        <img src="/Graphical Resouces/Footer/Facebook.png" alt="Facebook Logo">
+                    </a>
+                    <a href="#">
+                        <img src="/Graphical Resouces/Footer/Instagram.png" alt="Instagram Logo">
+                    </a>
+                    <a href="#">
+                        <img src="/Graphical Resouces/Footer/LogoX.png" alt="XLogo">
+                    </a>
+                </div>
+                <div class="elements__terms__services">
+                    <a href="#">
+                        Terms of Service
+                    </a>
+                </div>
+                <div class="elements__legal">
+                    <a href="#">
+                        Legal
+                    </a>
+                </div>
+                <div class="elements__privacy">
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+                </div>
+                <div class="elements__cookies">
+                    <a href="#">
+                        Cookies Policy
+                    </a>
+                </div>
+                <section class="footer__copyright">
+                    <p>© Virtual Vortex. The games are property of their respective owners. 
+                    <p>Nintendo of America Inc. Headquarters are located in Floridablanca, Santander, COL</p>
+                </section>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
