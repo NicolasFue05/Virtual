@@ -100,3 +100,10 @@ Font Call: "Kanit", sans-serif;
     6 - Una Politica de Privacidad
     7 - Una Politica de Cookies
     7 - El copyright de La Tienda
+
+
+· BUTTON LEFT 
+<div class="theBest__button__left">
+    <a href="#">
+       <img src="/GraphicalResouces/Main/RowLeft.png" alt="">
+    </a>
