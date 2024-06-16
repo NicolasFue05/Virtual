@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #000000d2;
+    background-color: #402c44d2;
 }
 
 header {
@@ -93,7 +93,7 @@ header {
 
     & .theBest__title__container {
         border-bottom: 2px solid #000;
-        box-shadow: 0 8px 6px -6px black;
+        
         display: flex;
         justify-content: center;
 
@@ -115,9 +115,10 @@ header {
             border-radius: 20px;
             margin-top: 20px;
             margin-left: 10px; /* Eliminar */
-            background-color: white;
+            background-color: rgba(19, 19, 19, 0.507);
+            color: rgb(255, 255, 255);
             padding: 5px;
-            height: 260px;
+            height: 270px;
             /* background-image: url(/GraphicalResouces/Cyberpunk2077/Cyberpunk2077FrontPage.jpg); */
             background-size: cover;
 
@@ -129,12 +130,187 @@ header {
             }
 
             & .cyberpunk2077__info {
-                height: 75px;
+                height: 105px;
+                padding: 10px;
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
-                background-color: red;
                 box-sizing: border-box;
+                display: grid;
+                align-content:  space-around;
+                align-items: end;
+                justify-items: start;
+                grid-template-areas: 
+                "Title Title"
+                "Price Fav";
+                column-gap: 30px;
+
+                & .info__name {
+                    font-size: 120%;
+                    display: grid;
+                    margin: 0%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    grid-area: Title;
+                }
+                
+                & .info__price {
+                    font-size: 100%;
+                    grid-area: Price;
+                    margin-bottom: 9px;
+                }
+
+                .info__fav {
+                    height: 30px;
+                    margin-left: 20px;
+                    width: 70%;
+                    position: relative; /* Asegúrate de que el contenedor tenga posición relativa */
+                
+                    .fav__toggle {
+                        display: none;
+                    }
+                    
+                    .fav__label {
+                        cursor: pointer;
+                        display: block;
+                        position: relative;
+                    }
+                    
+                    .fav__icon1, .fav__icon2 {
+                        width: 70%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transition: opacity 0.3s ease;
+                    }
+                    
+                    .fav__icon1 {
+                        z-index: 1;
+                    }
+                    
+                    .fav__icon2 {
+                        opacity: 0;
+                    }
+                    
+                    .fav__toggle:checked + .fav__label .fav__icon1 {
+                        opacity: 0;
+                    }
+                    
+                    .fav__toggle:checked + .fav__label .fav__icon2 {
+                        opacity: 1;
+                        z-index: 2;
+                    }
+                    
+                    .fav__label:hover .fav__icon1,
+                    .fav__label:hover .fav__icon2 {
+                        width: 80%;
+                    }
+                } 
             }
         }
+
+
+        /* Elden Ring */
+        & .games__eldenring{
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 10px; /* Eliminar */
+            background-color: rgba(19, 19, 19, 0.507);
+            color: rgb(255, 255, 255);
+            padding: 5px;
+            height: 270px;
+            /* background-image: url(/GraphicalResouces/Cyberpunk2077/Cyberpunk2077FrontPage.jpg); */
+            background-size: cover;
+
+            & .eldenring__image {
+                box-sizing: border-box;
+                border-radius: 15px;
+                width: 100% ;
+                height: 160px;
+            }
+
+            & .eldenring__info {
+                height: 105px;
+                padding: 10px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                box-sizing: border-box;
+                display: grid;
+                align-content:  space-around;
+                align-items: end;
+                justify-items: start;
+                grid-template-areas: 
+                "Title Title"
+                "Price Fav";
+                column-gap: 30px;
+
+                & .info__name2 {
+                    font-size: 120%;
+                    display: grid;
+                    margin: 0%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    grid-area: Title;
+                }
+                
+                & .info__price2  {
+                    font-size: 100%;
+                    grid-area: Price;
+                    margin-bottom: 9px;
+                }
+
+                .eldenring__fav {
+                    height: 30px;
+                    margin-left: 20px;
+                    width: 70%;
+                    position: relative; /* Asegúrate de que el contenedor tenga posición relativa */
+                
+                    .eldenring__toggle {
+                        display: none;
+                    }
+                    
+                    .eldenring__label {
+                        cursor: pointer;
+                        display: block;
+                        position: relative;
+                    }
+                    
+                    .eldenring__icon1, .eldenring__icon2 {
+                        width: 70%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transition: opacity 0.3s ease;
+                    }
+                    
+                    .eldenring__icon1 {
+                        z-index: 1;
+                    }
+                    
+                    .eldenring__icon2 {
+                        opacity: 0;
+                    }
+                    
+                    .eldenring__toggle:checked + .eldenring__label .eldenring__icon1 {
+                        opacity: 0;
+                    }
+                    
+                    .eldenring__toggle:checked + .eldenring__label .eldenring__icon2 {
+                        opacity: 1;
+                        z-index: 2;
+                    }
+                    
+                    .eldenring__label:hover .eldenring__icon1,
+                    .eldenring__label:hover .eldenring__icon2 {
+                        width: 80%;
+                    }
+                } 
+            }
+        }
+
+        /* Boton */
+
+        
     }
 }
