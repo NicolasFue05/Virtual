@@ -63,6 +63,8 @@ header {
         align-items: center;
         
         & .menu__image{
+            background-color: white;
+            border-radius: 50%;
             margin-left: 10px;
             width: 80%;
             display: flex;
