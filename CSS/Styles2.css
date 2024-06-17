@@ -733,3 +733,87 @@ footer {
         }
     }
 }
+
+/* Ocultar Pc__page en dispositivos móviles */
+@media (max-width: 520px) {
+    #Pc__page {
+        display: none;
+    }
+}
+
+/* Mostrar Pc__page en PC y ocultar otros elementos */
+@media (min-width: 521px) {
+    header, main, footer {
+        display: none;
+    }
+
+    #Pc__page {
+        display: block;
+        padding: 40px;
+        background: linear-gradient(to top, #c876ff, #20115b, #7232f2, #c876ff);
+    }
+
+    #Pc__page .mesage__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Pc__page .text1__container {
+        font-size: 8vh;
+        display: flex;
+        justify-content: center;
+        font-family: "Orbitron", sans-serif;
+    }
+
+    #Pc__page .face__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #Pc__page .face__container img {
+        width: 50vh;
+    }
+
+    #Pc__page .text2__container {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 4vh;
+        font-family: "Orbitron", sans-serif;
+        margin-bottom: 50px;
+    }
+
+    #Pc__page .buttom__container {
+        border: 2px solid black;
+        border-radius: 50px;
+        font-family: "Orbitron", sans-serif;
+        background-color: rgba(51, 3, 128, 0.423);
+        height: 80px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    #Pc__page .buttom__container {
+        border: 2px solid black;
+        border-radius: 50px;
+        font-family: "Orbitron", sans-serif;
+        background-color: rgba(51, 3, 128, 0.423);
+        height: 80px;
+        width: 17%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}

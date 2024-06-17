@@ -305,7 +305,8 @@ header {
         width: 50%;
         height: 40px;
         display: flex;
-        justify-content: space-around;
+        margin-left: 7px;
+        column-gap: 10px;
 
         & .players__container {
             border-radius: 50%;
@@ -325,7 +326,7 @@ header {
         width: 50%;
         height: 40px;
         display: flex;
-        justify-content: space-around;
+        margin-left: 24px;
 
         & .platforms__container {
             border-radius: 50%;

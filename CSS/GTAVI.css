@@ -324,8 +324,8 @@ header {
     & .info__platforms {
         width: 50%;
         height: 40px;
+        margin-left: 20px;
         display: flex;
-        justify-content: space-around;
 
         & .platforms__container {
             border-radius: 50%;
