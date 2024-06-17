@@ -107,3 +107,17 @@ Font Call: "Kanit", sans-serif;
     <a href="#">
        <img src="/GraphicalResouces/Main/RowLeft.png" alt="">
     </a>
+
+
+
+<div class="elements__social">
+                    <a href="#">
+                        <img src="/GraphicalResouces/Footer/Facebook.png" alt="Facebook Logo">
+                    </a>
+                    <a href="#">
+                        <img src="/GraphicalResouces/Footer/Instagram.png" alt="Instagram Logo">
+                    </a>
+                    <a href="#">
+                        <img src="/GraphicalResouces/Footer/LogoX.png" alt="XLogo">
+                    </a>
+                </div>
