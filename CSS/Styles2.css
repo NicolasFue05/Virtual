@@ -125,10 +125,10 @@ main{
         margin-top: 5px;
         width: 100%;
         display: grid;
-        grid-template-columns: minmax(50px, 1fr) minmax(50px, 1fr) 10%;
+        grid-template-columns: 10% minmax(50px, 1fr) minmax(50px, 1fr);
         column-gap: 10px;
 
-        & .games__cyberpunk2077{
+        & .games__tlof{
             border-radius: 20px;
             margin-top: 20px;
             margin-left:6%;
@@ -139,14 +139,14 @@ main{
             box-shadow: 5px 5px 7px 1px;
             background-size: cover;
 
-            & .cyberpunk2077__image {
+            & .tlof__image {
                 box-sizing: border-box;
                 border-radius: 15px;
                 width: 100% ;
                 height: 150px;
             }
 
-            & .cyberpunk2077__info {
+            & .tlof__info {
                 height: 105px;
                 padding: 10px;
                 border-bottom-left-radius: 20px;
@@ -161,7 +161,7 @@ main{
                 "Price Fav";
                 column-gap: 30px;
 
-                & .info__name {
+                & .tlof__name {
                     font-size: 110%;
                     display: grid;
                     margin: 0%;
@@ -171,28 +171,28 @@ main{
                     grid-area: Title;
                 }
                 
-                & .info__price {
+                & .tlof__price {
                     font-size: 100%;
                     grid-area: Price;
                     margin-bottom: 9px;
                 }
 
-                .info__fav { 
+                .tlof__fav { 
                     height: 40px;
                     margin-left: 20px;
                     width: 70%;
                 
-                    .fav__toggle {
+                    .tlof__toggle {
                         display: none;
                     }
                     
-                    .fav__label {
+                    .tlof__label {
                         cursor: pointer;
                         display: block;
                         position: relative;
                     }
                     
-                    .fav__icon1, .fav__icon2 {
+                    .tlof__icon1, .tlof__icon2 {
                         margin-top: 10px;
                         width: 90%;
                         position: absolute;
@@ -201,25 +201,25 @@ main{
                         transition: opacity 0.3s ease;
                     }
                     
-                    .fav__icon1 {
+                    .tlof__icon1 {
                         z-index: 1;
                     }
                     
-                    .fav__icon2 {
+                    .tlof__icon2 {
                         opacity: 0;
                     }
                     
-                    .fav__toggle:checked + .fav__label .fav__icon1 {
+                    .tlof__toggle:checked + .tlof__label .tlof__icon1 {
                         opacity: 0;
                     }
                     
-                    .fav__toggle:checked + .fav__label .fav__icon2 {
+                    .tlof__toggle:checked + .tlof__label .tlof__icon2 {
                         opacity: 1;
                         z-index: 2;
                     }
                     
-                    .fav__label:hover .fav__icon1,
-                    .fav__label:hover .fav__icon2 {
+                    .tlof__label:hover .tlof__icon1,
+                    .tlof__label:hover .tlof__icon2 {
                         width: 80%;
                     }
                 } 
@@ -227,8 +227,8 @@ main{
         }
 
 
-        /* Elden Ring */
-        & .games__eldenring{
+        /* The Leyend Of Zelda */
+        & .games__tloz{
             border-radius: 20px;
             margin-top: 20px;
             margin-left:6%;
@@ -239,14 +239,14 @@ main{
             background-size: cover;
             box-shadow: 5px 5px 7px 1px;
 
-            & .eldenring__image {
+            & .tloz__image {
                 box-sizing: border-box;
                 border-radius: 15px;
                 width: 100% ;
                 height: 150px;
             }
 
-            & .eldenring__info {
+            .tloz__info {
                 height: 105px;
                 padding: 10px;
                 border-bottom-left-radius: 20px;
@@ -263,7 +263,7 @@ main{
                 color: #ffff;
                 font-size: 15.6px;
 
-                & .info__name2 {
+                .tloz__name2 {
                     font-size: 120%;
                     display: grid;
                     margin: 0%;
@@ -273,28 +273,28 @@ main{
                     grid-area: Title;
                 }
                 
-                & .info__price2  {
+                & .tloz__price2  {
                     font-size: 100%;
                     grid-area: Price;
                     margin-bottom: 9px;
                 }
 
-                .eldenring__fav {
+                .tloz__fav {
                     height: 40px;
                     margin-left: 20px;
                     width: 70%;
                 
-                    .eldenring__toggle {
+                    .tloz__toggle {
                         display: none;
                     }
                     
-                    .eldenring__label {
+                    .tloz__label {
                         cursor: pointer;
                         display: block;
                         position: relative;
                     }
                     
-                    .eldenring__icon1, .eldenring__icon2 {
+                    .tloz__icon1, .tloz__icon2 {
                         margin-top: 10px;
                         width: 90%;
                         position: absolute;
@@ -303,42 +303,38 @@ main{
                         transition: opacity 0.3s ease;
                     }
                     
-                    .eldenring__icon1 {
+                    .tloz__icon1 {
                         z-index: 1;
                     }
                     
-                    .eldenring__icon2 {
+                    .tloz__icon2 {
                         opacity: 0;
                     }
                     
-                    .eldenring__toggle:checked + .eldenring__label .eldenring__icon1 {
+                    .tloz__toggle:checked + .tloz__label .tloz__icon1 {
                         opacity: 0;
                     }
                     
-                    .eldenring__toggle:checked + .eldenring__label .eldenring__icon2 {
+                    .tloz__toggle:checked + .tloz__label .tloz__icon2 {
                         opacity: 1;
                         z-index: 2;
                     }
                     
-                    .eldenring__label:hover .eldenring__icon1,
-                    .eldenring__label:hover .eldenring__icon2 {
+                    .tloz__label:hover .tloz__icon1,
+                    .tloz__label:hover .tloz__icon2 {
                         width: 80%;
                     }
                 } 
             }
         }
-
         /* Boton */
         .games__button__container{
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
         .button__rowrigth {
             width: 6vw;
         }
     }
 }
-
-/* Pre-Order Games */
