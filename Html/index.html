@@ -1,134 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Vortex</title>
-    <link rel="stylesheet" href="../CSS/Styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Virtual Vortex App</title>
 </head>
+
 <body>
+
     <header>
         <div class="logo-container">
-            <img src="../GraphicalResouces/Main/Logo.png" alt="Logo" class="logo-image">
+            <img src="../GraphicalResouces/Main/Logo.png" alt="Logo Image">
         </div>
-        <div class="header-title">
-            <h1>Virtual Vortex</h1>
-        </div>
-        <div class="menu-container">
-            <a href="/Html/index.html">
-                <img src="../GraphicalResouces/Main/MenuIcon.png" alt="MenuIcon" class="menu-icon">
-            </a>
+        <h1>Virtual Vortex</h1>
+        <div class="menu-icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFFJREFUSEvtlEkKADAIA83/H52eu1APZQShnquTBaqAR/D9+IA04fqIbDuVdXkgaRK9OcABL+pPu/Ud4A7wDnAAHlF/AN4BDujfwXewJoD/pgNrVBgZX2h0sgAAAABJRU5ErkJggg==" />
         </div>
     </header>
 
-    <main>
-        <section class="welcome-section">
-            <img src="/GraphicalResouces/Main/Welcome.png" class="welcome-image">
-        </section>
-        
-        <section class="best-games-section">
-            <div class="section-title">
-                <h1>The Best Of Virtual Vortex</h1>
-            </div>
-            <div class="games-container">
-                <div class="game-item">
-                    <a href="/Html/Cyberpunk.html">
-                        <img src="/GraphicalResouces/Cyberpunk2077/Cyberpunk2077FrontPage.jpg" alt="Cyberpunk 2077" class="game-image">
-                        <div class="game-info">
-                            <p class="game-name">CyberPunk 2077</p>
-                            <p class="game-price">$150.000</p>
-                            <div class="favorite-container">
-                                <input type="checkbox" id="fav-toggle-cyberpunk" class="favorite-toggle">
-                                <label for="fav-toggle-cyberpunk" class="favorite-label">
-                                    <img src="/GraphicalResouces/hearts/white.png" class="heart-white" alt="White Heart">
-                                    <img src="/GraphicalResouces/hearts/red.png" class="heart-red" alt="Red Heart">
-                                </label>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Repite lo mismo para Elden Ring y otros juegos -->
-                <div class="button-container">
-                    <a href="/Html/index2.html">
-                        <img src="/GraphicalResouces/Main/RowRight.png" alt="Next" class="next-button">
-                    </a>
-                </div>
-            </div>
-        </section>
+    <section id="menu" style="display: none;">
+        <ul>
+            <li><u class="home-link"></u></li>
+            <li><u class="services-link"></u></li>
+            <li><u class="about-link"></u></li>
+            <li><u class="settings-link"></u></li>
+        </ul>
+    </section>
 
-        <section class="pre-order-section">
-            <div class="section-title">
-                <h1>Pre-Order Games</h1>
-            </div>
-            <div class="pre-order-games-container">
-                <div class="game-item">
-                    <a href="/Html/BodyCam.html">
-                        <img src="/GraphicalResouces/Pre-Order Games/BodyCam/BodyCamFrontPage.jpg" alt="Body Cam" class="game-image">
-                        <div class="game-info">
-                            <p class="game-name">Body Cam</p>
-                            <p class="game-price">$299.900</p>
-                            <div class="favorite-container">
-                                <input type="checkbox" id="fav-toggle-bodycam" class="favorite-toggle">
-                                <label for="fav-toggle-bodycam" class="favorite-label">
-                                    <img src="/GraphicalResouces/hearts/white.png" class="heart-white" alt="White Heart">
-                                    <img src="/GraphicalResouces/hearts/red.png" class="heart-red" alt="Red Heart">
-                                </label>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Repite lo mismo para GTA VI y otros juegos -->
-            </div>
-        </section>
-
-        <section class="more-info-section">
-            <div class="section-title">
-                <h1>See More</h1>
-            </div>
-            <div class="info-elements-container">
-                <div class="info-item"><a href="#">All Games</a></div>
-                <div class="info-item"><a href="#">Discounts</a></div>
-                <div class="info-item"><a href="#">Vortex Membership</a></div>
-                <div class="info-item"><a href="#">News</a></div>
-                <div class="info-item"><img src="/GraphicalResouces/Main/Services.png" alt="Services Logo" class="services-logo"><a href="#">Service</a></div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="logo-footer">
-            <img src="/GraphicalResouces/Main/Logo.png" alt="Logo" class="footer-logo">
+    <section class="welcome-container">
+        <div class="welcome-text">
+            <p>The Best in VideoGames</p>
         </div>
-        <section class="footer-info">
-            <div class="footer-info-elements">
-                <div class="footer-info-item"><a href="#">Contact</a></div>
-                <div class="footer-info-item"><a href="#">Terms</a></div>
-                <div class="footer-info-item"><a href="#">Legal</a></div>
-                <div class="footer-info-item"><a href="#">Privacy Policy</a></div>
-                <div class="footer-info-item"><a href="#">Cookies Policy</a></div>
-                <div class="footer-info-item">
-                    <a href="#"><img src="/GraphicalResouces/Footer/Facebook.png" alt="Facebook Logo" class="social-icon"></a>
-                    <a href="#"><img src="/GraphicalResouces/Footer/Instagram.png" alt="Instagram Logo" class="social-icon"></a>
-                    <a href="#"><img src="/GraphicalResouces/Footer/Whattsapp.png" alt="WhatsApp Logo" class="social-icon"></a>
-                </div>
-                <div class="footer-info-item">
-                    <p>© Virtual Vortex. The games are property of their respective owners. Virtual Vortex Inc. Headquarters are located in Floridablanca, Santander, COL</p>
-                </div>
-            </div>
-        </section>
-    </footer>
-
-    <section class="pc-page-message">
-        <div class="message-container">
-            <div class="message-text">
-                <p>UPSS!!!</p>
-                <p>It seems that our application has not arrived for your device, Don't worry!! It will be available soon, we are sorry for the wait.</p>
-                <p>!!You Can Only Back in Mobile Devices!!</p>
-            </div>
-            <div class="back-button-container">
-                <a href="/Html/index.html">Back</a>
-            </div>
+        <div class="welcome-image">
+            <img src="../GraphicalResouces/Main/Welcome.png" alt="Welcome Image">
         </div>
     </section>
+
+    <div class="best-title-container">
+        <p>The Best of Video Games</p>
+    </div>
+
+    <section class="best-videogames">
+
+        <div class="videogame-container">
+            <img src="../GraphicalResouces/Cyberpunk2077/Cyberpunk2077FrontPage.jpg" alt="" class="videogame-image">
+            <p class="videogame-title">Cyberpunk 2077</p>
+            <div class="price-heart">
+                <p>$150.500</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvFVIGNwjAMtDeBSYBJeCYBJgEmgU2eTY5eZZc0TdqYF/pKVao6ufOdHat8+dEv48v/EADYisheRLg+TeVNVa/8BvAjIptaPHVlogDA3Q6W3HvYTxKXHiZwVlVPamxRBn7oiAi4svdoqwPX4iQ4+aZBgdnC7J+qus7TA0Aij+9m4tx3cDtTgksHTm9HGUS6DAAzp9KrqlLh2yJ00f5Hpy8Cmu5NXHioaq8yVfBrHq/TIkXIzEbiDDaXLBr8i4Bb+7pFRQUeZIvtoiqS7MnF831Lj/wG4IUOkRg4z/J+DNmXCLwVuTaRZOCTFi/d5GaSJfCJAi9qcqmqSlrAqwTWEVUlreCzBDUSU+kFLY6V2Wm6MGNYeL79GC/NrPx801jIakKMJvBFi7I5w5rQGs6ryTSt3fomBdGREarBX8BDFn1K9ALnPasZKSz6ZAAAAABJRU5ErkJggg=="/ id="heart">
+            </div>
+        </div>
+        <div class="videogame-container">
+            <img src="../GraphicalResouces/EldenRing/EldenRingFrontPage.jpg" alt="" class="videogame-image">
+            <p class="videogame-title">Elden Ring</p>
+            <div class="price-heart">
+                <p>$250.500</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvFVIGNwjAMtDeBSYBJeCYBJgEmgU2eTY5eZZc0TdqYF/pKVao6ufOdHat8+dEv48v/EADYisheRLg+TeVNVa/8BvAjIptaPHVlogDA3Q6W3HvYTxKXHiZwVlVPamxRBn7oiAi4svdoqwPX4iQ4+aZBgdnC7J+qus7TA0Aij+9m4tx3cDtTgksHTm9HGUS6DAAzp9KrqlLh2yJ00f5Hpy8Cmu5NXHioaq8yVfBrHq/TIkXIzEbiDDaXLBr8i4Bb+7pFRQUeZIvtoiqS7MnF831Lj/wG4IUOkRg4z/J+DNmXCLwVuTaRZOCTFi/d5GaSJfCJAi9qcqmqSlrAqwTWEVUlreCzBDUSU+kFLY6V2Wm6MGNYeL79GC/NrPx801jIakKMJvBFi7I5w5rQGs6ryTSt3fomBdGREarBX8BDFn1K9ALnPasZKSz6ZAAAAABJRU5ErkJggg==" id="heart"/>
+            </div>
+        </div>
+        <div class="videogame-container">
+            <img src="../GraphicalResouces/TheLastOfUs/TheLastOfUs2FontPage.jpg" alt="" class="videogame-image">
+            <p class="videogame-title">The Last of Us 2</p>
+            <div class="price-heart">
+                <p>$200.500</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvFVIGNwjAMtDeBSYBJeCYBJgEmgU2eTY5eZZc0TdqYF/pKVao6ufOdHat8+dEv48v/EADYisheRLg+TeVNVa/8BvAjIptaPHVlogDA3Q6W3HvYTxKXHiZwVlVPamxRBn7oiAi4svdoqwPX4iQ4+aZBgdnC7J+qus7TA0Aij+9m4tx3cDtTgksHTm9HGUS6DAAzp9KrqlLh2yJ00f5Hpy8Cmu5NXHioaq8yVfBrHq/TIkXIzEbiDDaXLBr8i4Bb+7pFRQUeZIvtoiqS7MnF831Lj/wG4IUOkRg4z/J+DNmXCLwVuTaRZOCTFi/d5GaSJfCJAi9qcqmqSlrAqwTWEVUlreCzBDUSU+kFLY6V2Wm6MGNYeL79GC/NrPx801jIakKMJvBFi7I5w5rQGs6ryTSt3fomBdGREarBX8BDFn1K9ALnPasZKSz6ZAAAAABJRU5ErkJggg==" id="heart"/>
+            </div>
+        </div>
+        
+        <div class="videogame-container">
+            <img src="../GraphicalResouces/TheLeyendOfZelda/TheLegendofZeldaFrontPage.jpg" alt="" class="videogame-image">
+            <p class="videogame-title">The Leyend of Zelda</p>
+            <div class="price-heart">
+                <p>$150.500</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvFVIGNwjAMtDeBSYBJeCYBJgEmgU2eTY5eZZc0TdqYF/pKVao6ufOdHat8+dEv48v/EADYisheRLg+TeVNVa/8BvAjIptaPHVlogDA3Q6W3HvYTxKXHiZwVlVPamxRBn7oiAi4svdoqwPX4iQ4+aZBgdnC7J+qus7TA0Aij+9m4tx3cDtTgksHTm9HGUS6DAAzp9KrqlLh2yJ00f5Hpy8Cmu5NXHioaq8yVfBrHq/TIkXIzEbiDDaXLBr8i4Bb+7pFRQUeZIvtoiqS7MnF831Lj/wG4IUOkRg4z/J+DNmXCLwVuTaRZOCTFi/d5GaSJfCJAi9qcqmqSlrAqwTWEVUlreCzBDUSU+kFLY6V2Wm6MGNYeL79GC/NrPx801jIakKMJvBFi7I5w5rQGs6ryTSt3fomBdGREarBX8BDFn1K9ALnPasZKSz6ZAAAAABJRU5ErkJggg==" id="heart"/>  
+            </div>
+        </div>
+
+        <!--Elementos de Prueba-->
+        <div class="videogame-container">
+            <img src="../GraphicalResouces/TheLeyendOfZelda/TheLegendofZeldaFrontPage.jpg" alt="" class="videogame-image">
+            <p class="videogame-title">The Leyend of Zelda</p>
+            <div class="price-heart">
+                <p>$150.500</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvFVIGNwjAMtDeBSYBJeCYBJgEmgU2eTY5eZZc0TdqYF/pKVao6ufOdHat8+dEv48v/EADYisheRLg+TeVNVa/8BvAjIptaPHVlogDA3Q6W3HvYTxKXHiZwVlVPamxRBn7oiAi4svdoqwPX4iQ4+aZBgdnC7J+qus7TA0Aij+9m4tx3cDtTgksHTm9HGUS6DAAzp9KrqlLh2yJ00f5Hpy8Cmu5NXHioaq8yVfBrHq/TIkXIzEbiDDaXLBr8i4Bb+7pFRQUeZIvtoiqS7MnF831Lj/wG4IUOkRg4z/J+DNmXCLwVuTaRZOCTFi/d5GaSJfCJAi9qcqmqSlrAqwTWEVUlreCzBDUSU+kFLY6V2Wm6MGNYeL79GC/NrPx801jIakKMJvBFi7I5w5rQGs6ryTSt3fomBdGREarBX8BDFn1K9ALnPasZKSz6ZAAAAABJRU5ErkJggg==" id="heart"/>  
+            </div>
+        </div>
+
+        <div class="videogame-container">
+            <img src="../GraphicalResouces/TheLeyendOfZelda/TheLegendofZeldaFrontPage.jpg" alt="" class="videogame-image">
+            <p class="videogame-title">The Leyend of Zelda</p>
+            <div class="price-heart">
+                <p>$150.500</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvFVIGNwjAMtDeBSYBJeCYBJgEmgU2eTY5eZZc0TdqYF/pKVao6ufOdHat8+dEv48v/EADYisheRLg+TeVNVa/8BvAjIptaPHVlogDA3Q6W3HvYTxKXHiZwVlVPamxRBn7oiAi4svdoqwPX4iQ4+aZBgdnC7J+qus7TA0Aij+9m4tx3cDtTgksHTm9HGUS6DAAzp9KrqlLh2yJ00f5Hpy8Cmu5NXHioaq8yVfBrHq/TIkXIzEbiDDaXLBr8i4Bb+7pFRQUeZIvtoiqS7MnF831Lj/wG4IUOkRg4z/J+DNmXCLwVuTaRZOCTFi/d5GaSJfCJAi9qcqmqSlrAqwTWEVUlreCzBDUSU+kFLY6V2Wm6MGNYeL79GC/NrPx801jIakKMJvBFi7I5w5rQGs6ryTSt3fomBdGREarBX8BDFn1K9ALnPasZKSz6ZAAAAABJRU5ErkJggg==" id="heart"/>  
+            </div>
+        </div>
+       
+        <div class="right-row-container">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAiBJREFUSEvFltGNwjAMhu2UlxMQxAYwCWUTmORgEmASYJLrBogCupdLcnJVIjckacodoi99aJrP/v0nNsKbHnwTFzqDv0+nicqyHI2ZGMSCAqf3cDg8dEkiCUwwLcQCED8jm1MQB424SwkiCk4E+mLZCqXWH+NxpYjvCYIraJbtAWBy/9EAHNCYoxbiQFnRmp9eb0KyI8AMABYMUgil5iG4F1xDv/gmGnHZJqEn2CL0nxd8Lcs9AuQV2Jh1fzRapRrHUx5v5g/gW1lurGQdoTy42/m8Ymbc9qVc8u8N8OVyyYUxVFd6ir6U09RM3XX1sdvUyj1I3gDzbDXivK2mlFWsDNwrZMyBlPN7gC6YDEUufpDGl/mtLE2bB5hfGgpacEPmxNpW4BYD8lpzFS34WpYLBCBjgQFYDqTc8iwpMDdr5oeg+3lCfF8vWCg1dQ++zS7mNo9SjTuBfbdgLsmzYJ9SFOc9aG/GXBKfo9ukDkFDJfwXc4WgVbbsIuFKWnDszIXKShLGoLXM9ibsS2l5jXPMz1xKUyAZXfe7J4E5v3E3NMBOV/rTlUkB8Gbj+ibeJBJvMO+t1qVJ0AZOTy3AmF2XtugaKtRsXj0IQKjZdBl9CgNQIAC9j5lS1VRJo4/QOjeIMzs81G01ZtDXDHsJTSZ9vM0yGm35MOd6qvKD0Hobmy69/bht2iDj0Roa6Ol9H+pfNtC3BfTM9ySpn9m47Z9fZfWdLpThjZYAAAAASUVORK5CYII="/>
+        </div>
+    </section>
+
+
+    <div class="coming-soon">
+        <p>Coming Soon</p>
+    </div>
+
+    <section class="comming-soon-games">
+
+        <div class="videogame-container">
+            <img src="../GraphicalResouces/Pre-Order Games/BodyCam/BodyCamFrontPage.jpg" alt="" class="videogame-image">
+            <p class="videogame-title">Body Cam</p>
+            <div class="price-heart">
+                <p>$299.000</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvFVIGNwjAMtDeBSYBJeCYBJgEmgU2eTY5eZZc0TdqYF/pKVao6ufOdHat8+dEv48v/EADYisheRLg+TeVNVa/8BvAjIptaPHVlogDA3Q6W3HvYTxKXHiZwVlVPamxRBn7oiAi4svdoqwPX4iQ4+aZBgdnC7J+qus7TA0Aij+9m4tx3cDtTgksHTm9HGUS6DAAzp9KrqlLh2yJ00f5Hpy8Cmu5NXHioaq8yVfBrHq/TIkXIzEbiDDaXLBr8i4Bb+7pFRQUeZIvtoiqS7MnF831Lj/wG4IUOkRg4z/J+DNmXCLwVuTaRZOCTFi/d5GaSJfCJAi9qcqmqSlrAqwTWEVUlreCzBDUSU+kFLY6V2Wm6MGNYeL79GC/NrPx801jIakKMJvBFi7I5w5rQGs6ryTSt3fomBdGREarBX8BDFn1K9ALnPasZKSz6ZAAAAABJRU5ErkJggg==" id="heart"/>  
+            </div>
+        </div>
+
+        <div class="videogame-container">
+            <img src="../GraphicalResouces/Pre-Order Games/GtaVI/GtaFrontPage.jpg" alt="" class="videogame-image">
+            <p class="videogame-title">GTA VI</p>
+            <div class="price-heart">
+                <p>$299.000</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvFVIGNwjAMtDeBSYBJeCYBJgEmgU2eTY5eZZc0TdqYF/pKVao6ufOdHat8+dEv48v/EADYisheRLg+TeVNVa/8BvAjIptaPHVlogDA3Q6W3HvYTxKXHiZwVlVPamxRBn7oiAi4svdoqwPX4iQ4+aZBgdnC7J+qus7TA0Aij+9m4tx3cDtTgksHTm9HGUS6DAAzp9KrqlLh2yJ00f5Hpy8Cmu5NXHioaq8yVfBrHq/TIkXIzEbiDDaXLBr8i4Bb+7pFRQUeZIvtoiqS7MnF831Lj/wG4IUOkRg4z/J+DNmXCLwVuTaRZOCTFi/d5GaSJfCJAi9qcqmqSlrAqwTWEVUlreCzBDUSU+kFLY6V2Wm6MGNYeL79GC/NrPx801jIakKMJvBFi7I5w5rQGs6ryTSt3fomBdGREarBX8BDFn1K9ALnPasZKSz6ZAAAAABJRU5ErkJggg==" id="heart"/>  
+        </div>
+
+    </section>
+
+    <!--More Info Section-->
+    <section class="more-info">
+
+        <div class="more-info-title">
+            <h1>More</h1>
+        </div>
+        <div class="more-info-containers">
+            
+            <div class="more-info-container">
+                <h1>Todos los juegos</h1>
+            </div>
+            <div class="more-info-container">
+                <h1>Descounts</h1>
+            </div>
+            <div class="more-info-container">
+                <h1>Store Membership</h1>
+            </div>
+            <div class="more-info-container">
+                <h1>News</h1>
+            </div>
+            <div class="more-info-container more-info-image">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZVJREFUSEu1VdFxwjAMlRx+egFzbBAmIWwCk5ROAp2EMEnTCTgMXH/qqLWbgGNkh5TDv7b05KenJ4QnH3xyfugEOB6PuaiqnBBnCJADQAkABRB9VkIUo9GoiBUZBPja7zOdJOs6aSxHKbSev0wmBvjmsAAnpRYIsO5BXwlE7+l4vPJjbgD+kfyak+jNB2kBGFqqJPnoUbn/9IauFsBJqW2Q87o6W4QQC0B85QohgGIo5by5uwDEqCGA5VDKjZsw9r5CnDfqugCcD4dVqCqh9dRXSZROpxdXAKWMahbctzkA8+6sFHXR5AKY5mZsgxl1dKitTKWcmlz3AZjprXXe1eSmwFRKm9ttclhB/XW7SaVctn8QabLxHwIo8c+HmsP2y15yTbamRrT1i+Ukat7UXpVzluLGRAfN1XOIJV+uwUFrqvKsIuqUnOP6kr7H7Kz/E8Au0dp6//dgkJkd4Q8m92PWrmNTHRQUMystFfmB9y4cw3mi9bLXwnHBjLqQKEOA2S9VZmWClSzR7qGV2X+2+IjOpf8o0A/cROkZpqGufwAAAABJRU5ErkJggg=="/>
+                <h1>Services</h1>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Footer container-->
+
+     <footer>
+        <div class="footer-image-container">
+            <img src="../GraphicalResouces/Main/Logo.png" alt="Logo Virtual Vortex">
+        </div>
+        <div class="footer-info">
+
+            <div class="footer-card">
+                <p>Contact</p>
+            </div>
+            <div class="footer-card">
+                <img src="../GraphicalResouces/Footer/Facebook.png" alt="">
+                <img src="../GraphicalResouces/Footer/Instagram.png" alt="">
+                <img src="../GraphicalResouces/Footer/LogoX.png" alt="">
+                <img src="../GraphicalResouces/Footer/Whattsapp.png" alt="">
+            </div>
+            <div class="footer-card">
+                <p>Terms of Service</p>
+            </div>
+            <div class="footer-card">
+                <p>Legal</p>
+            </div>
+            <div class="footer-card">
+                <p>Polity Privacy</p>
+            </div>
+            <div class="footer-card">
+                <p>Polity Cookies</p>
+            </div>
+            <div class="footer-card copyright">
+                <p>© Copyright</p>
+            </div>
+
+        </div>
+     </footer>
+
 </body>
+
 </html>
