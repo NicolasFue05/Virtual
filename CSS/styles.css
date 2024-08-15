@@ -20,7 +20,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#login-form{
+.form{
     width: 50%;
     display: flex;
     justify-self: center;
@@ -36,18 +36,22 @@
     box-sizing: border-box;
 }
 
-#login-form label{
+.form-large{
+    height: 700px;
+}
+
+.form label{
     font-size: 150%;
     font-style: oblique;
 }
 
-#login-form input{
+.form input{
     width: 70%;
     padding: 8px;
     border-radius: 10px;0   
 }
 
-#loginbtn{
+.form-button{
     padding-left: 15%;
     padding-right: 15%;
     padding-bottom: 5%;
@@ -60,7 +64,7 @@
 }
 
 #HTML-form a{
-    margin-top: 40px;
+    margin-top: 20px;
     color: #fff;
     text-decoration: none;
     margin-bottom: 20px;
