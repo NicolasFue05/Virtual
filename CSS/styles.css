@@ -5,10 +5,73 @@
 /*Fonts Orbitron | Kanit */
 /*BGCOlor = background-color: rgb(19, 13, 29);
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 
-*/
+
+/* LOGIN */
+#HTML-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#login-form{
+    width: 50%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 60px;
+    background-color: rgb(47, 27, 80);
+    opacity: 0.8;
+    border-radius: 20px;
+    height: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#login-form label{
+    font-size: 150%;
+    font-style: oblique;
+}
+
+#login-form input{
+    width: 70%;
+    padding: 8px;
+    border-radius: 10px;0   
+}
+
+#loginbtn{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background-color: black;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#HTML-form a{
+    margin-top: 40px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.form-icons{
+    display: flex;
+    column-gap: 20px;
+}
+
+/* Sign up */
 
 *{
     padding: 0;
