@@ -34,7 +34,7 @@ async function checkUser(userInput) {
         usernameMessage.style.color = 'green';
         usernameMessage.textContent = 'Correct user';
         // git it the pass check to the main page
-        compruebeLink.setAttribute('href', './index.html') 
+        compruebeLink.setAttribute('href', '../Html/index.html') 
         console.log(`Pass check : ${compruebeLink}`)
     } else {
         usernameMessage.style.color = 'red';
@@ -49,3 +49,4 @@ document.addEventListener('DOMContentLoaded', () => {
         checkUser(userInput);  // Llamar a la función checkUser con el valor de entrada
     });
 });
+
