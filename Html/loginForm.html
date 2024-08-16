@@ -13,9 +13,12 @@
     <form action="#" id="login-form" class="form" method="post" autocomplete="on">
         <label for="user">User</label>
         <input type="text" id="user-input-login" name="user">
+        <p id="username-message"></p>
         <label for="password">Password</label>
         <input type="password" id="password-input-login" name="password">
-        <button type="submit" class="form-button" id="loginbtn">LOGIN</button>
+        <button type="button" class="form-button" id="loginbtn" >
+            <a id="compruebe-link">LOGIN</a>
+        </button>
     </form>
 
     <a href="/Html/signForm.html">Dont have an account?</a>
@@ -28,5 +31,7 @@
         </a>
     </div>
 
+
+    <script src="../Scripts/login.js"></script>
 </body>
 </html>
