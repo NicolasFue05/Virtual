@@ -20,31 +20,3 @@ async function getData() {
     }
 }
 
-// Show the data into the page
-function showGameData(gameName) {
-    try {
-        getData().then(response => {
-            console.log(response.Games)
-
-            // Store the buttons into an array
-
-            // Loops through the json until the game name matches
-            for (let i = 0; i < response.Games.length; i++) {
-                //if the name match change it in all the nodes
-                if (gameName == response.Games[i].name) {
-                    gameBigTitle.textContent = response.Games[i].name; // Set the Big Name
-                    displayImage.setAttribute('src', `${response.Games[i].imageFrontpage}`) // set the display image
-                    // Set the images into the buttons
-                    for (let j = 0; j > 4; j++){
-                        
-                    }
-                    break
-                }
-            }
-
-        })
-    }
-    catch (err) {
-        console.error(err)
-    }
-}
