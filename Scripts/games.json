@@ -1,0 +1,22 @@
+{
+    "Games": [
+        {
+            "name": "The Last of Us 2",
+            "imageFrontpage": "../GraphicalResouces/TheLastOfUs/TheLastOfUs2FrontPage.jpg",
+            "image1": "../GraphicalResouces/TheLastOfUs/TheLastOfUs2-image1.jpg",
+            "image2": "../GraphicalResouces/TheLastOfUs/TheLastOfUs2-image2.jpg",
+            "image3": "../GraphicalResouces/TheLastOfUs/TheLastOfUs2-image3.jpg",
+            "video": "../GraphicalResouces/TheLastOfUs/TheLastOfUs2.mp4",
+            "developers": "Naughty Dog",
+            "game-description": "Disfruta del juego ganador de más de 300 premios Game of the Year, remasterizado para la consola PlayStation®5. Vuelve a vivir o juega por primera vez la historia de Ellie y Abby, ahora con mejoras gráficas, nuevos modos de juego, como la experiencia de supervivencia roguelike Sin retorno, integración completa del control inalámbrico DualSense® y más. Cinco años después de su peligroso viaje a través de unos Estados Unidos pospandemia, Ellie y Joel logran establecerse en Jackson, Wyoming. Vivir entre una próspera comunidad de sobrevivientes les ha concedido paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros sobrevivientes más desesperados. Cuando un evento violento interrumpe esa paz, Ellie se embarca en un viaje incesante para obtener justicia y llegar a un cierre.",
+            "normal-price" : "250.000",
+            "member-price" : "220.00",
+            "players" : "1 Player",
+            "platforms" : [
+                "PlayStation®4",
+                "PlayStation®5"
+            ],
+            "wifi" : "No wifi required" 
+        }
+    ]
+}
