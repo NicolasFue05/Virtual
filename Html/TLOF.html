@@ -1,66 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberPunk 2077</title>
-    <link rel="stylesheet" href="/CSS/gameStyles.css">
+    <link rel="stylesheet" href="../CSS/gameStyles.css">
 </head>
+
 <body>
     <header>
-        <div class="header-logo">
-            <img src="/GraphicalResouces/Main/Logo.png" alt="Logo" class="logo__image">
+        <div class="logo-container">
+            <img src="../GraphicalResouces/Main/Logo.png" alt="Logo" class="logo-image">
         </div>
-        <div class="header__name">
-            <h1 class="name__title">Virtual Vortex</h1>
+        <div class="header-name">
+            <h1><!--Poner titulo del juego (.header-name h1)--></h1>
         </div>
-        <div class="header__menu">
-            <a href="/Html/index.html">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFFJREFUSEvtlEkKADAIA83/H52eu1APZQShnquTBaqAR/D9+IA04fqIbDuVdXkgaRK9OcABL+pPu/Ud4A7wDnAAHlF/AN4BDujfwXewJoD/pgNrVBgZX2h0sgAAAABJRU5ErkJggg==" />
+        <div>
+            <a href="/Html/index.html" class="menu-icon">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFFJREFUSEvtlEkKADAIA83/H52eu1APZQShnquTBaqAR/D9+IA04fqIbDuVdXkgaRK9OcABL+pPu/Ud4A7wDnAAHlF/AN4BDujfwXewJoD/pgNrVBgZX2h0sgAAAABJRU5ErkJggg==" />
             </a>
         </div>
     </header>
 
     <main>
-        <div id="game__title">
-            <p style="margin-top: 30px;">The Last Of Us 2</p>
-        </div>
-        <div class="game__sample">
-            <div class="display__main">
-                <input type="radio" id="mainImage1" name="mainImage" checked>
-                <input type="radio" id="mainImage2" name="mainImage">
-                <input type="radio" id="mainImage3" name="mainImage">
-                <input type="radio" id="mainVideo" name="mainImage">
-                
-                <div class="display__images">
-                    <label for="mainImage1" class="display__label">
-                        <img src="/GraphicalResouces/TheLastOfUs/TheLastOfUs2-image1.jpg" alt="Image 1" class="display__image">
-                    </label>
-                    <label for="mainImage2" class="display__label">
-                        <img src="/GraphicalResouces/TheLastOfUs/TheLastOfUs2-image2.jpg" alt="Image 2" class="display__image">
-                    </label>
-                    <label for="mainImage3" class="display__label">
-                        <img src="/GraphicalResouces/TheLastOfUs/TheLastOfUs2-image3.jpg" alt="Image 3" class="display__image">
-                    </label>
-                    <label for="mainVideo" class="display__label">
-                        <video src="/GraphicalResouces/TheLastOfUs/TheLastOfUs2.mp4" class="display__video" controls></video>
-                    </label>
-                </div>
-            </div>
+        <div class="game-sample">
+            <div class="show-image-container">
 
-            <div class="thumbnails">
-                <label for="mainImage1" class="thumbnail">
-                    <img src="/GraphicalResouces/TheLastOfUs/TheLastOfUs2-image1.jpg" alt="Thumb 1">
-                </label>
-                <label for="mainImage2" class="thumbnail">
-                    <img src="/GraphicalResouces/TheLastOfUs/TheLastOfUs2-image2.jpg" alt="Thumb 2">
-                </label>
-                <label for="mainImage3" class="thumbnail">
-                    <img src="/GraphicalResouces/TheLastOfUs/TheLastOfUs2-image3.jpg" alt="Thumb 3">
-                </label>
-                <label for="mainVideo" class="thumbnail">
-                    <img src="/GraphicalResouces/Additional Icons/PlayIcon.png" alt="" class="play__icon">
-                </label>
+                <img alt=""> <!--Poner atributo src el path de la imagen-->
+
+            </div>
+            <div class="image-buttons-container">
+                 <!--Poner atributo src el path de la imagen-->
+                <img alt="" class="image-change-btn">
+                <img alt="" class="image-change-btn">
+                <img alt="" class="image-change-btn">
+                <img alt="" class="image-change-btn">
             </div>
         </div>
         <!-- Game Information ( Name and Fav Button)-->
@@ -71,27 +47,27 @@
                 </div>
                 <div class="info__fav">
                     <input type="checkbox" id="fav-toggle" class="fav__toggle">
-                        <label for="fav-toggle" class="fav__label">
-                                <img src="/GraphicalResouces/hearts/white.png" class="fav__icon1" alt="White Heart">
-                                <img src="/GraphicalResouces/hearts/red.png" class="fav__icon2" alt="Red Heart">
-                        </label>
+                    <label for="fav-toggle" class="fav__label">
+                        <img src="../GraphicalResouces/hearts/white.png" class="fav__icon1" alt="White Heart">
+                        <img src="../GraphicalResouces/hearts/red.png" class="fav__icon2" alt="Red Heart">
+                    </label>
                 </div>
             </div>
         </section>
         <!-- Game Information ( Description, Prices and Add to Cart )-->
         <section id="game__info">
             <div class="description__container">
-                <p>
-                    Five years after that dangerous journey through a pandemic-stricken United States, Ellie and Joel put down roots in Jackson, Wyoming. Living in a thriving community of survivors gave them peace and stability despite the constant threat of the infected and other more desperate survivors. When a violent event disrupts the peace, Ellie embarks on a tireless journey in search of justice and closure. As he hunts down those responsible one by one, he must face the devastating physical and emotional consequences of his actions.
-                    <br>
-                    A complex and emotional story
-                    Experience the growing moral conflicts that Ellie faces in her relentless quest for revenge. The cycle of violence that surrounds her will change your notions of justice, good and evil, and who is the hero and the villain.
-                    <br>
-                    A beautiful and at the same time dangerous world
-                    Take the journey with Ellie, from the peaceful mountains and forests of Jackson to the vast, green ruins of Seattle. Discover new groups of survivors, treacherous and unknown environments, and the terrifying evolutions of the infected. The latest iteration of the Naughty Dog engine brings to life a world and deadly characters that are far more detailed and realistic than ever before.
-                    <br>
-                    Survival and action gameplay, intense and wild
-                    New and evolved gameplay systems deliver a realistic version of the life-or-death decisions Ellie makes on her journey through this hostile world. Feel yourself desperately fighting to survive with enhanced high-intensity melee combat, fluid movement, and dynamic camouflage. A wide variety of weapons, crafting items, skills and upgrades allow you to customize Ellie to your play style.
+                <p> 
+                    Disfruta del juego ganador de más de 300 premios Game of the Year, remasterizado para la consola
+                    PlayStation®5. Vuelve a vivir o juega por primera vez la historia de Ellie y Abby, ahora con mejoras
+                    gráficas, nuevos modos de juego, como la experiencia de supervivencia roguelike Sin retorno,
+                    integración completa del control inalámbrico DualSense® y más.
+
+                    Cinco años después de su peligroso viaje a través de unos Estados Unidos pospandemia, Ellie y Joel
+                    logran establecerse en Jackson, Wyoming. Vivir entre una próspera comunidad de sobrevivientes les ha
+                    concedido paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros
+                    sobrevivientes más desesperados. Cuando un evento violento interrumpe esa paz, Ellie se embarca en
+                    un viaje incesante para obtener justicia y llegar a un cierre.
                 </p>
             </div>
             <div class="prices-add">
@@ -109,33 +85,39 @@
             </div>
         </section>
         <div class="pegy__container">
-            <img src="/GraphicalResouces/Additional Icons/Pegy18.png" alt="" width="30%" height="60px">
+            <img src="../GraphicalResouces/Additional Icons/Pegy18.png" alt="" width="30%" height="60px">
         </div>
         <section id="additional__info">
             <div class="info__players">
                 <div class="players__container">
-                    <img src="/GraphicalResouces/Additional Icons/Players.png" alt="" class="players">
+                    <img src="../GraphicalResouces/Additional Icons/Players.png" alt="" class="players">
                 </div>
-                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-right: 50px;">1 Player</p>
+                <p
+                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-right: 50px;">
+                    1 Player</p>
             </div>
             <div class="info__platforms">
                 <div class="platforms__container">
-                    <img src="/GraphicalResouces/Additional Icons/AllPlatforms.png" class="platforms" alt="">
+                    <img src="../GraphicalResouces/Additional Icons/AllPlatforms.png" class="platforms" alt="">
                 </div>
-                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-right: 80px;">Ps4</p>
+                <p
+                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-right: 80px;">
+                    Ps4</p>
             </div>
             <div class="info__online">
                 <div class="online__container">
-                    <img src="/GraphicalResouces/Additional Icons/Wifi.png" class="online" alt="">
+                    <img src="../GraphicalResouces/Additional Icons/Wifi.png" class="online" alt="">
                 </div>
-                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 10px; ">No Wifi Requiered</p>
+                <p
+                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 10px; ">
+                    No Wifi Requiered</p>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="logo__container">
-            <img src="/GraphicalResouces/Main/Logo.png" alt="Logo" height="30px">
+            <img src="../GraphicalResouces/Main/Logo.png" alt="Logo" height="30px">
         </div>
         <section class="footer__info">
             <div class="footer__info__elements">
@@ -167,27 +149,33 @@
                 <div class="elements__social">
                     <a href="#">
                         <div>
-                            <img src="/GraphicalResouces/Footer/Facebook.png" alt="Facebook Logo" width="20%" style="margin-left: 45px;">
+                            <img src="../GraphicalResouces/Footer/Facebook.png" alt="Facebook Logo" width="20%"
+                                style="margin-left: 45px;">
                         </div>
                     </a>
                     <a href="#">
                         <div>
-                            <img src="/GraphicalResouces/Footer/Instagram.png" alt="" width="65%" style="margin-left: 5px;">
+                            <img src="../GraphicalResouces/Footer/Instagram.png" alt="" width="65%"
+                                style="margin-left: 5px;">
                         </div>
                     </a>
                     <a href="#">
                         <div>
-                            <img src="/GraphicalResouces/Footer/Whattsapp.png" alt="" width="35%" style="margin-left: 14px;">
+                            <img src="../GraphicalResouces/Footer/Whattsapp.png" alt="" width="35%"
+                                style="margin-left: 14px;">
                         </div>
                     </a>
                 </div>
                 <div class="elements__copyright">
-                    <p>© Virtual Vortex. The games are property of their respective owners. Virtual Vortex Inc. Headquarters are located in Floridablanca, Santander, COL</p>
+                    <p>© Virtual Vortex. The games are property of their respective owners. Virtual Vortex Inc.
+                        Headquarters are located in Floridablanca, Santander, COL</p>
                 </div>
             </div>
         </section>
     </footer>
 
-    
+    <script src="../Scripts/gameSection.js"></script>
+
 </body>
+
 </html>
