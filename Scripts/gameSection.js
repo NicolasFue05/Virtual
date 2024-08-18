@@ -20,8 +20,6 @@ async function getData() {
     }
 }
 
-
-
 // Show the data into the page
 function showGameData(gameName) {
     try {
