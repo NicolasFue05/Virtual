@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+    <!--Cambiar el Nombre de este Archivo a (game.html)-->
     <header>
         <div class="logo-container">
             <img src="../GraphicalResouces/Main/Logo.png" alt="Logo" class="logo-image">
@@ -16,11 +18,8 @@
         <div class="header-name">
             <h1><!--Poner titulo del juego (.header-name h1)--></h1>
         </div>
-        <div>
-            <a href="/Html/index.html" class="menu-icon">
-                <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFFJREFUSEvtlEkKADAIA83/H52eu1APZQShnquTBaqAR/D9+IA04fqIbDuVdXkgaRK9OcABL+pPu/Ud4A7wDnAAHlF/AN4BDujfwXewJoD/pgNrVBgZX2h0sgAAAABJRU5ErkJggg==" />
-            </a>
+        <div class="menu-icon"  >
+            <img  id="menubtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFFJREFUSEvtlEkKADAIA83/H52eu1APZQShnquTBaqAR/D9+IA04fqIbDuVdXkgaRK9OcABL+pPu/Ud4A7wDnAAHlF/AN4BDujfwXewJoD/pgNrVBgZX2h0sgAAAABJRU5ErkJggg==" />
         </div>
     </header>
 
@@ -174,6 +173,21 @@
         </section>
     </footer>
 
+    <section id="menu" >
+        <ul id="menu-list">
+            <li style="list-style: none;" class="menu-link" >
+                <a href="./index.html" style="text-decoration: none; color: #fff;">Home</a>
+            </li>
+            <li style="list-style: none;" class="menu-link">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATtJREFUSEvNlT1WAkEQhKtyDyGht5BjQCShgSaagwcg0cxEjDyG3MIQDmFebvN29rXDzo+L63PCZbe/qq7ugRj5cOT6+DuAJLVu9gBeSa5+w13nwAFC3SnJ7amQoxZJugLwAmBLcjoG4BzAri18sovekCWZA3My9OxJTuzjFMC7GALJA6yipPcmh0sAC5KbGopz/hCmMLkHLuxOTQniJnFC0sY9vWiSfhS2E7QhuQhispvc7J4t2xLAt4/6nKRaWgIEF8U2hfawab4XULyLnLIuuNhBzmkNwCbJJqrmHC1mEdCObMgiB+m9WmoBFyQ/JJ2R/PSU8EzS4Z1YQS3gEcANgDeS81DEigN4BjAD8ETydigg/FcgnhJ/zce/ZRctUmkZ3MUqrS0Arlt366Z994Mc1IxP6p2qDP414AvzeZAZW2j9mQAAAABJRU5ErkJggg=="/ id="cart-icon">
+            </li>
+            <li style="list-style: none;" class="menu-link">Games</li>
+            <li style="list-style: none;" class="menu-link">Info</li>
+            <li style="list-style: none;" class="menu-link">Settings</li>
+        </ul>
+    </section>
+
+    <script src="../Scripts/app.js"></script>
     <script src="../Scripts/gameSection.js"></script>
 
 </body>
