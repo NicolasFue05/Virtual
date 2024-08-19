@@ -19,7 +19,6 @@ async function getData() {
         return null
     }
 }
-
 // Show the data into the page
 function displayGameData(gameName) {
     try {
@@ -48,3 +47,19 @@ function displayGameData(gameName) {
 }
 
 displayGameData('The Last of Us 2')
+// Change the heart button
+
+const heartButton = document.querySelector('.hearts')
+const heartImage = document.querySelector('.white')
+
+heartButton.addEventListener('click', () => {
+    if(heartImage.classList.contains('white')){
+        heartImage.classList.remove('white')
+        heartImage.classList.add('red')
+        heartImage.setAttribute('src', '../GraphicalResouces/hearts/red.png')
+    }else if(heartImage.classList.contains('red')){
+        heartImage.classList.remove('red')
+        heartImage.classList.add('white')
+        heartImage.setAttribute('src', '../GraphicalResouces/hearts/white.png')
+    }
+})
