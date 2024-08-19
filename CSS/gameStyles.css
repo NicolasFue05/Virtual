@@ -225,3 +225,7 @@ main{
     font-weight: bold;
 }
 
+.hearts{
+    background-color: rgb(15, 9, 25);
+    border: none;
+}
