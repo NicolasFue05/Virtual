@@ -18,9 +18,10 @@
         <div class="header-name">
             <h1><!--Poner titulo del juego (.header-name h1)--></h1>
         </div>
-        <div class="menu-icon"  >
-            <img  id="menubtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFFJREFUSEvtlEkKADAIA83/H52eu1APZQShnquTBaqAR/D9+IA04fqIbDuVdXkgaRK9OcABL+pPu/Ud4A7wDnAAHlF/AN4BDujfwXewJoD/pgNrVBgZX2h0sgAAAABJRU5ErkJggg==" />
-        </div>
+        <button class="menu-icon">
+            <img id="menubtn"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFFJREFUSEvtlEkKADAIA83/H52eu1APZQShnquTBaqAR/D9+IA04fqIbDuVdXkgaRK9OcABL+pPu/Ud4A7wDnAAHlF/AN4BDujfwXewJoD/pgNrVBgZX2h0sgAAAABJRU5ErkJggg==" />
+        </button>
     </header>
 
     <main>
@@ -31,11 +32,11 @@
 
             </div>
             <div class="image-buttons-container">
-                 <!--Poner atributo src el path de la imagen-->
-                <img alt="" class="image-change-btn">
-                <img alt="" class="image-change-btn">
-                <img alt="" class="image-change-btn">
-                <img alt="" class="image-change-btn">
+                <!--Poner atributo src el path de la imagen-->
+                <img alt="image1" class="image-change-btn">
+                <img alt="image2" class="image-change-btn">
+                <img alt="image3" class="image-change-btn">
+                <img alt="image4" class="image-change-btn">
             </div>
         </div>
         <!-- Game Information ( Name and Fav Button)-->
@@ -48,9 +49,9 @@
             </button>
         </section>
         <!-- Game Information ( Description, Prices and Add to Cart )-->
-        <section id="game__info">
-            <div class="description__container">
-                <p> 
+        <section id="game-info">
+            <div class="description-container">
+                <p>
                     Disfruta del juego ganador de más de 300 premios Game of the Year, remasterizado para la consola
                     PlayStation®5. Vuelve a vivir o juega por primera vez la historia de Ellie y Abby, ahora con mejoras
                     gráficas, nuevos modos de juego, como la experiencia de supervivencia roguelike Sin retorno,
@@ -64,116 +65,103 @@
                 </p>
             </div>
             <div class="prices-add">
-                <div class="normal__price">
-                    <p>Normal Price: $250.000</p>
+                <div class="normal-price">
+                    <p>
+                        Normal Price: $250.000
+                    </p>
                 </div>
-                <div class="member__price">
-                    <p>Member Price: $220.000</p>
-                </div>
-                <div class="add__button">
+                <button class="add-button">
                     <a href="#" style="text-decoration: none; color: white;">
-                        <p>Add To Cart</p>
+                        <p>
+                            Add To Cart
+                        </p>
                     </a>
+                </button>
+                <div class="member-price">
+                    <p>
+                        Member Price: $220.000
+                    </p>
                 </div>
             </div>
         </section>
-        <div class="pegy__container">
+        <div class="pegy-container">
             <img src="../GraphicalResouces/Additional Icons/Pegy18.png" alt="" width="30%" height="60px">
         </div>
-        <section id="additional__info">
-            <div class="info__players">
-                <div class="players__container">
+        <section id="additional-info">
+            <div class="info-players">
+                <div class="players-container">
                     <img src="../GraphicalResouces/Additional Icons/Players.png" alt="" class="players">
+                    <p
+                        style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-right: 50px;">
+                        1 Player
+                    </p>
                 </div>
-                <p
-                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-right: 50px;">
-                    1 Player</p>
+
             </div>
-            <div class="info__platforms">
-                <div class="platforms__container">
+            <div class="info-platforms">
+                <div class="platforms-container">
                     <img src="../GraphicalResouces/Additional Icons/AllPlatforms.png" class="platforms" alt="">
+                    <p
+                        style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-right: 80px;">
+                        Ps4
+                    </p>
                 </div>
-                <p
-                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-right: 80px;">
-                    Ps4</p>
+
             </div>
-            <div class="info__online">
-                <div class="online__container">
+            <div class="info-online">
+                <div class="online-container">
                     <img src="../GraphicalResouces/Additional Icons/Wifi.png" class="online" alt="">
+                    <p
+                        style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 10px; ">
+                        No Wifi Requiered
+                    </p>
                 </div>
-                <p
-                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 10px; ">
-                    No Wifi Requiered</p>
-            </div>
         </section>
     </main>
 
     <footer>
-        <div class="logo__container">
-            <img src="../GraphicalResouces/Main/Logo.png" alt="Logo" height="30px">
+        <div class="footer-image-container">
+            <img src="../GraphicalResouces/Main/Logo.png" alt="Logo Virtual Vortex">
         </div>
-        <section class="footer__info">
-            <div class="footer__info__elements">
-                <div class="elements__contact">
-                    <a href="#" style="text-decoration: none; color: white;">
-                        Contact
-                    </a>
-                </div>
-                <div class="elements__terms__services">
-                    <a href="#" style="text-decoration: none; color: white;">
-                        Terms
-                    </a>
-                </div>
-                <div class="elements__legal">
-                    <a href="#" style="text-decoration: none; color: white;">
-                        Legal
-                    </a>
-                </div>
-                <div class="elements__privacy">
-                    <a href="#" style="text-decoration: none; color: white;">
-                        Privacy Policy
-                    </a>
-                </div>
-                <div class="elements__cookies">
-                    <a href="#" style="text-decoration: none; color: white;">
-                        Cookies Policy
-                    </a>
-                </div>
-                <div class="elements__social">
-                    <a href="#">
-                        <div>
-                            <img src="../GraphicalResouces/Footer/Facebook.png" alt="Facebook Logo" width="20%"
-                                style="margin-left: 45px;">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div>
-                            <img src="../GraphicalResouces/Footer/Instagram.png" alt="" width="65%"
-                                style="margin-left: 5px;">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div>
-                            <img src="../GraphicalResouces/Footer/Whattsapp.png" alt="" width="35%"
-                                style="margin-left: 14px;">
-                        </div>
-                    </a>
-                </div>
-                <div class="elements__copyright">
-                    <p>© Virtual Vortex. The games are property of their respective owners. Virtual Vortex Inc.
-                        Headquarters are located in Floridablanca, Santander, COL</p>
-                </div>
-            </div>
-        </section>
-    </footer>
+        <div class="footer-info">
 
-    <section id="menu" >
+            <div class="footer-card">
+                <p>Contact</p>
+            </div>
+            <div class="footer-card">
+                <p>Terms of Service</p>
+            </div>
+            <div class="footer-card">
+                <p>Legal</p>
+            </div>
+            <div class="footer-card">
+                <p>Polity Privacy</p>
+            </div>
+            <div class="footer-card">
+                <p>Polity Cookies</p>
+            </div>
+            <div class="footer-card copyright">
+                <p>© Copyright</p>
+            </div>
+            <div class="footer-card">
+                <img src="../GraphicalResouces/Footer/Facebook.png" alt="">
+                <img src="../GraphicalResouces/Footer/Instagram.png" alt="">
+                <img src="../GraphicalResouces/Footer/LogoX.png" alt="">
+                <img src="../GraphicalResouces/Footer/Whattsapp.png" alt="">
+            </div>
+
+        </div>
+    </footer>
+    </main>
+
+    <section id="menu">
         <ul id="menu-list">
-            <li style="list-style: none;" class="menu-link" >
+            <li style="list-style: none;" class="menu-link">
                 <a href="./index.html" style="text-decoration: none; color: #fff;">Home</a>
             </li>
             <li style="list-style: none;" class="menu-link">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATtJREFUSEvNlT1WAkEQhKtyDyGht5BjQCShgSaagwcg0cxEjDyG3MIQDmFebvN29rXDzo+L63PCZbe/qq7ugRj5cOT6+DuAJLVu9gBeSa5+w13nwAFC3SnJ7amQoxZJugLwAmBLcjoG4BzAri18sovekCWZA3My9OxJTuzjFMC7GALJA6yipPcmh0sAC5KbGopz/hCmMLkHLuxOTQniJnFC0sY9vWiSfhS2E7QhuQhispvc7J4t2xLAt4/6nKRaWgIEF8U2hfawab4XULyLnLIuuNhBzmkNwCbJJqrmHC1mEdCObMgiB+m9WmoBFyQ/JJ2R/PSU8EzS4Z1YQS3gEcANgDeS81DEigN4BjAD8ETydigg/FcgnhJ/zce/ZRctUmkZ3MUqrS0Arlt366Z994Mc1IxP6p2qDP414AvzeZAZW2j9mQAAAABJRU5ErkJggg=="/ id="cart-icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATtJREFUSEvNlT1WAkEQhKtyDyGht5BjQCShgSaagwcg0cxEjDyG3MIQDmFebvN29rXDzo+L63PCZbe/qq7ugRj5cOT6+DuAJLVu9gBeSa5+w13nwAFC3SnJ7amQoxZJugLwAmBLcjoG4BzAri18sovekCWZA3My9OxJTuzjFMC7GALJA6yipPcmh0sAC5KbGopz/hCmMLkHLuxOTQniJnFC0sY9vWiSfhS2E7QhuQhispvc7J4t2xLAt4/6nKRaWgIEF8U2hfawab4XULyLnLIuuNhBzmkNwCbJJqrmHC1mEdCObMgiB+m9WmoBFyQ/JJ2R/PSU8EzS4Z1YQS3gEcANgDeS81DEigN4BjAD8ETydigg/FcgnhJ/zce/ZRctUmkZ3MUqrS0Arlt366Z994Mc1IxP6p2qDP414AvzeZAZW2j9mQAAAABJRU5ErkJggg=="
+                    / id="cart-icon">
             </li>
             <li style="list-style: none;" class="menu-link">Games</li>
             <li style="list-style: none;" class="menu-link">Info</li>
