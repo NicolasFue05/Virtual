@@ -2,8 +2,8 @@
     "Games": [
         {
             "name": "The Last of Us 2",
-            "frontPage" : "../GraphicalResouces/TheLastOfUs?TheLastOfUs2FrontIndex.jpg",
-            "images" : [
+            "frontPage": "../GraphicalResouces/TheLastOfUs?TheLastOfUs2FrontIndex.jpg",
+            "images": [
                 "../GraphicalResouces/TheLastOfUs/TheLastOfUs2FrontPageMain.jpg",
                 "../GraphicalResouces/TheLastOfUs/TheLastOfUs2-image1.jpg",
                 "../GraphicalResouces/TheLastOfUs/TheLastOfUs2-image2.jpg",
@@ -12,14 +12,56 @@
             ],
             "developers": "Naughty Dog",
             "game-description": "Disfruta del juego ganador de más de 300 premios Game of the Year, remasterizado para la consola PlayStation®5. Vuelve a vivir o juega por primera vez la historia de Ellie y Abby, ahora con mejoras gráficas, nuevos modos de juego, como la experiencia de supervivencia roguelike Sin retorno, integración completa del control inalámbrico DualSense® y más. Cinco años después de su peligroso viaje a través de unos Estados Unidos pospandemia, Ellie y Joel logran establecerse en Jackson, Wyoming. Vivir entre una próspera comunidad de sobrevivientes les ha concedido paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros sobrevivientes más desesperados. Cuando un evento violento interrumpe esa paz, Ellie se embarca en un viaje incesante para obtener justicia y llegar a un cierre.",
-            "normal-price" : "250.000",
-            "member-price" : "220.00",
-            "players" : "1 Player",
-            "platforms" : [
+            "normal-price": "250.000",
+            "member-price": "220.00",
+            "players": "1 Player",
+            "platforms": [
                 "PlayStation®4",
                 "PlayStation®5"
             ],
-            "wifi" : "No wifi required" 
+            "wifi": "No wifi required"
+        },
+        {
+            "name": "Dark Souls 3",
+            "frontPage": "https://static.bandainamcoent.eu/high/dark-souls/dark-souls-3/00-page-setup/ds3_game-thumbnail.jpg",
+            "images": [
+                "https://www.somosxbox.com/wp-content/uploads/2015/08/dark-souls-3.jpg",
+                "https://media.gq-magazine.co.uk/photos/5d13ae679fa6014038839ef1/16:9/w_2560%2Cc_limit/red-dead-redemption-03-22oct18_b.jpg",
+                "https://i.guim.co.uk/img/media/2d354177b10ffe5e8c90190e6cf459fe78096805/534_8_3253_1953/master/3253.jpg?width=700&quality=85&auto=format&fit=max&s=5aa48e7c0e251bb1e0c309624d5c2fdd",
+                "https://i.blogs.es/245247/010416-darksouls3-review/1366_2000.jpg",
+                "https://www.pluggedin.com/wp-content/uploads/2020/01/Dark-Souls-III-review-image638x366-1024x587.jpeg"
+            ],
+            "developers": "Naughty Dog",
+            "game-description": "Disfruta del juego ganador de más de 300 premios Game of the Year, remasterizado para la consola PlayStation®5. Vuelve a vivir o juega por primera vez la historia de Ellie y Abby, ahora con mejoras gráficas, nuevos modos de juego, como la experiencia de supervivencia roguelike Sin retorno, integración completa del control inalámbrico DualSense® y más. Cinco años después de su peligroso viaje a través de unos Estados Unidos pospandemia, Ellie y Joel logran establecerse en Jackson, Wyoming. Vivir entre una próspera comunidad de sobrevivientes les ha concedido paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros sobrevivientes más desesperados. Cuando un evento violento interrumpe esa paz, Ellie se embarca en un viaje incesante para obtener justicia y llegar a un cierre.",
+            "normal-price": "250.000",
+            "member-price": "220.00",
+            "players": "1 Player",
+            "platforms": [
+                "PlayStation®4",
+                "PlayStation®5"
+            ],
+            "wifi": "No wifi required"
+        },
+        {
+            "name": "Red Dead Redemption 2",
+            "frontPage": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
+            "images": [
+                "https://i.blogs.es/93bc09/912-3/840_560.jpeg",
+                "https://media.gq-magazine.co.uk/photos/5d13ae679fa6014038839ef1/16:9/w_2560%2Cc_limit/red-dead-redemption-03-22oct18_b.jpg",
+                "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2018/10/red-dead-principal.jpg?tf=3840x",
+                "https://imagenes.heraldo.es/files/image_1920_1080/uploads/imagenes/2018/11/02/_RDR2Screenshot001_99629fb2.jpg"
+            ],
+            "developers": "Rockstar Games",
+            "game-description": "Red Dead Redemption 2 es un mundo abierto que retrata la vida de un forajido en el Salvaje Oeste. Con gráficos impresionantes y una narrativa inmersiva, experimenta la vida de Arthur Morgan mientras lucha por sobrevivir...",
+            "normal-price": "200.000",
+            "member-price": "180.000",
+            "players": "1 Player, Online Multiplayer",
+            "platforms": [
+                "PlayStation®4",
+                "Xbox One",
+                "PC"
+            ],
+            "wifi": "Wifi required for multiplayer"
         }
     ]
 }
