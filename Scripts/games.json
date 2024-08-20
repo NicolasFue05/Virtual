@@ -2,7 +2,7 @@
     "Games": [
         {
             "name": "The Last of Us 2",
-            "frontPage": "../GraphicalResouces/TheLastOfUs?TheLastOfUs2FrontIndex.jpg",
+            "frontPage": "../GraphicalResouces/TheLastOfUs/TheLastOfUs2FrontPageIndex.jpg",
             "images": [
                 "../GraphicalResouces/TheLastOfUs/TheLastOfUs2FrontPageMain.jpg",
                 "../GraphicalResouces/TheLastOfUs/TheLastOfUs2-image1.jpg",
