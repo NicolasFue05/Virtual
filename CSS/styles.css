@@ -18,7 +18,7 @@ body{
 
 /* Vanished */
 .main-animation {
-    animation: vanished-main 1s ease 0s 1 forwards;
+    animation: vanished-main 0.3s ease 0s 1 forwards;
     opacity: 0; /* Usa opacity en lugar de display */
     visibility: hidden; /* Esconde el menú después de la animación */
 }
@@ -45,6 +45,7 @@ body{
     height: 100%;
     color: #fff;
     cursor: pointer;
+
 }
 
 #menu-list:hover{
@@ -53,16 +54,16 @@ body{
 
 /* Animación del Menú */
 .menu-animation {
-    animation: menu-slide 2s ease 0s 1 forwards;
+    animation: menu-slide 0.3s linear 0s 1 forwards;
 }
 
 .slide-back{
-    animation: slide-back 2s ease 0s 1 forwards;
+    animation: slide-back 0.3 linear 0s 1 forwards;
 }
 
 @keyframes menu-slide {
     from {
-        opacity: 0.4;
+        opacity: 0;
         margin-left: 1800px;
     }
     to {
@@ -73,13 +74,17 @@ body{
 
 /* AGREGAR MENU SLIDEBACK PARA CUANDO SE TOQUE EL BOTON DE GUARDAR MENU*/
 @keyframes slide-back {
-    from{
+    0%{
         opacity: 1;
         margin-left: 0px;
     }
-    to{
+    50%{
+        opacity: 0.7;
+        margin-left: 3800px;
+    }
+    100%{
         opacity: 0;
-        margin-left: 1800px;
+        margin-left: 5000px;
     }
 }
 /* Estilo de los Enlaces del Menú */
@@ -89,6 +94,11 @@ body{
     font-size: 150%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
+}
+
+.menu-icon{
+    background-color: rgb(19, 13, 29);
+    border: none;
 }
 
 .menu-link:hover{
