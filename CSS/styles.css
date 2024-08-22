@@ -3,163 +3,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     margin: 0 auto;
     overflow-x: hidden;
     box-sizing: border-box;
-    background-color: rgb(19,13,29);
+    background-color: rgb(19, 13, 29);
     color: #fff;
 }
 
-/* Vanished */
-.main-animation {
-    animation: vanished-main 0.3s ease 0s 1 forwards;
-    opacity: 0; /* Usa opacity en lugar de display */
-    visibility: hidden; /* Esconde el menú después de la animación */
+/* Menu button styles */
+.menu-icon {
+    width: 3.1rem;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
 }
 
-/* Menú: Posicionamiento y Estilo */
-#menu {
+/* Menu icon bar styles */
+.menu-icon-bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+}
+
+/* Menu styles */
+.menu {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: none;
-    box-shadow: 0px 0px 8px rgb(97, 51, 172); 
-    background-color: rgb(19,13,29); /* Color de fondo que ya tenías */
-    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
-}
-
-/* Estilo del Menú Lista */
-#menu-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    right: 0;
+    width: 100vw;
     height: 100%;
+    background: rgb(19, 13, 29);
     color: #fff;
-    cursor: pointer;
-
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
 }
 
-#menu-list:hover{
-    color: #ffffff8d;
+.menu.show {
+    transform: translateX(0);
 }
 
-/* Animación del Menú */
-.menu-animation {
-    animation: menu-slide 0.3s linear 0s 1 forwards;
+.menu-list {
+    list-style: none;
+    padding: 20px;
 }
 
-.slide-back{
-    animation: slide-back 0.3 linear 0s 1 forwards;
+.menu-list li {
+    margin: 40px;
+    margin-bottom: 20px;
 }
 
-@keyframes menu-slide {
-    from {
-        opacity: 0;
-        margin-left: 1800px;
-    }
-    to {
-        opacity: 1;
-        margin-left: 0px;
-    }
-}
-
-/* AGREGAR MENU SLIDEBACK PARA CUANDO SE TOQUE EL BOTON DE GUARDAR MENU*/
-@keyframes slide-back {
-    0%{
-        opacity: 1;
-        margin-left: 0px;
-    }
-    50%{
-        opacity: 0.7;
-        margin-left: 3800px;
-    }
-    100%{
-        opacity: 0;
-        margin-left: 5000px;
-    }
-}
-/* Estilo de los Enlaces del Menú */
-.menu-link {
-    color: #fff;
-    padding: 80px;
-    font-size: 150%;
+.menu-list a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
-.menu-icon{
-    background-color: rgb(19, 13, 29);
-    border: none;
+/* Animations */
+.menu-animation {
+    animation: slide-in 0.3s forwards;
 }
 
-.menu-link:hover{
-    color: #ffffff8d;
+.slide-back {
+    animation: slide-out 0.3s forwards;
 }
 
-#cart-icon{
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+/* Ocultar el contenido del body cuando el menú está visible */
+body.menu-active {
+    overflow: hidden;
+}
+
+#cart-icon {
     width: 130%;
     opacity: 0.7;
 }
 
-#cart-icon:hover{
+#cart-icon:hover {
     width: 150%;
     color: #ffffff8d;
 
 }
 
-@keyframes vanished-main {
-    from {
-        opacity: 1;
-        visibility: visible;
-    }
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-header{
-    background-color: rgb(15, 9, 25);
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(15, 9, 25);
+    /* Ajusta el color de fondo según tu preferencia */
+    color: #fff;
+    /* Color del texto */
 }
 
-.logo-container img{
-    width: 70%;
-    padding: 10px;
+.logo-container img {
+    width: 4rem;
+    height: 70px;
+    /* Ajusta la altura del logo según tus necesidades */
 }
 
-header h1{
+h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2.3rem;
+    /* Ajusta el tamaño de la fuente según tu diseño */
+    margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3.5rem;
 }
 
-.menu-icon img{
-    width: 4.1rem;
+.menu-icon {
+    background: none;
+    border: none;
     cursor: pointer;
+    padding: 0;
+    margin-left: 20px;
 }
 
-.welcome-container{
+.menu-icon img {
+    width: 3rem;
+    /* Ajusta el tamaño del botón del menú según tus necesidades */
+    cursor: pointer;
+    height: auto;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+.welcome-container {
     display: flex;
     justify-content: space-evenly;
 }
 
-.welcome-text{
+.welcome-text {
     width: 40%;
     height: 250px;
     color: #fff;
@@ -175,13 +182,13 @@ header h1{
 
 }
 
-.welcome-text p{
+.welcome-text p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 160%;
 }
 
-.welcome-image img{
+.welcome-image img {
     width: 100%;
     margin-left: 10px;
     margin-top: 250px;
@@ -191,7 +198,7 @@ header h1{
     box-shadow: 0px 0px 18px #000;
 }
 
-.best-title-container{
+.best-title-container {
     margin-top: 70px;
     margin-bottom: 50px;
     padding: 20px;
@@ -204,24 +211,24 @@ header h1{
     text-shadow: 0px 0px 8px #fff;
 }
 
-.best-videogames{
+.best-videogames {
     padding: 10px;
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(500,1fr);
+    grid-template-columns: repeat(500, 1fr);
     overflow-y: hidden;
     overflow-x: scroll;
     height: 430px;
 }
 
-.best-videogames::-webkit-scrollbar{
+.best-videogames::-webkit-scrollbar {
     display: none;
 }
 
-.videogame-container{
+.videogame-container {
     width: 15rem;
     background-color: rgba(135, 102, 188, 0.1);
-    height: 400px;
+    height: 500px;
     margin-right: 70px;
     margin-left: 10px;
     padding: 10px;
@@ -231,17 +238,18 @@ header h1{
 }
 
 
-.videogame-container:hover{
+.videogame-container:hover {
     transform: scale(1.05);
 }
 
-.videogame-container img{
+.videogame-container img {
     width: 100%;
     height: 250px;
     border-radius: 20px;
 }
 
-.videogame-title{
+.videogame-title {
+    margin-top: 1.5rem;
     display: flex;
     width: 100%;
     height: 50px;
@@ -256,23 +264,29 @@ header h1{
     font-weight: bold;
 }
 
-.price-heart{
+.price-heart {
+    margin-top: 0.9rem;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;
+
+    #videogame-price {
+        font-size: 1.4rem;
+    }
 }
 
-#heart{
+#heart {
     width: 10%;
     height: 10%;
     cursor: pointer;
 }
 
-.right-row-container{
+.right-row-container {
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -280,12 +294,12 @@ header h1{
     width: 150%;
 }
 
-.right-row-container img{
+.right-row-container img {
     cursor: pointer;
 }
 
 
-.coming-soon{
+.coming-soon {
     margin-top: 50px;
     margin-bottom: 70px;
     width: 100%;
@@ -299,22 +313,22 @@ header h1{
     font-weight: bold;
 }
 
-.comming-soon-games{
+.comming-soon-games {
     display: grid;
-    grid-template-columns: repeat(100,1fr);
+    grid-template-columns: repeat(100, 1fr);
 }
 
-.comming-soon-games::-webkit-scrollbar{
+.comming-soon-games::-webkit-scrollbar {
     display: none;
 }
 
-.more-info{
+.more-info {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.more-info-title{
+.more-info-title {
     margin-top: 50px;
     padding: 10px;
     display: flex;
@@ -324,7 +338,7 @@ header h1{
     text-shadow: 0px 0px 8px #fff;
 }
 
-.more-info-containers{
+.more-info-containers {
     padding: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -332,7 +346,7 @@ header h1{
     padding-right: 20em;
 }
 
-.more-info-container{
+.more-info-container {
     padding: 10px;
     background-color: rgb(44, 26, 71);
     margin: 20px;
@@ -344,34 +358,34 @@ header h1{
 
 }
 
-.more-info-image{
+.more-info-image {
     grid-column: span 2;
     display: flex;
 }
 
-.more-info-image img{
+.more-info-image img {
     margin-right: 40px;
 }
 
-footer{
+footer {
     background-color: rgba(37, 12, 37, 0.6);
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
 
-.footer-image-container{
+.footer-image-container {
     display: flex;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.footer-image-container img{
+.footer-image-container img {
     width: 3rem;
 }
 
-.footer-info{
+.footer-info {
     margin-top: 20px;
     padding-left: 20rem;
     padding-right: 20rem;
@@ -381,7 +395,7 @@ footer{
     row-gap: 10px;
 }
 
-.footer-card{
+.footer-card {
     background-color: rgb(27, 14, 48);
     padding: 30px;
     margin: 10px;
@@ -394,55 +408,55 @@ footer{
     margin-bottom: 50px;
 }
 
-.footer-card img{
+.footer-card img {
     width: 10%;
     margin: 15px;
 }
 
-.copyright{
+.copyright {
     grid-column: span 2;
 }
 
-@media (max-width: 799px){
-    body{
+@media (max-width: 799px) {
+    body {
         overflow-x: hidden;
     }
 
-    #login-form{
+    #login-form {
         width: 50%;
     }
-    
-    header{
+
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: rgb(19,13,29);
+        background-color: rgb(19, 13, 29);
         opacity: 1;
     }
-    
-    .logo-container img{
+
+    .logo-container img {
         width: 40%;
         padding: 10px;
     }
-    
-    header h1{
+
+    header h1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 2.5rem;
         margin-right: 80px;
     }
-    
-    .menu-icon img{
+
+    .menu-icon img {
         width: 3.1rem;
         cursor: pointer;
     }
-    
-    .welcome-container{
+
+    .welcome-container {
         margin-top: 100px;
         display: flex;
         justify-content: space-between;
     }
-    
-    .welcome-text{
+
+    .welcome-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -456,28 +470,28 @@ footer{
         border-style: dashed;
         border-color: rgb(139, 91, 216);
     }
-    
-    .welcome-text p{
+
+    .welcome-text p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         font-size: 150%;
         width: 100%;
         margin-left: 20%;
     }
-    
-    .welcome-image{
+
+    .welcome-image {
         width: 100%;
     }
 
-    .welcome-image img{
+    .welcome-image img {
         width: 100%;
         border: 1px solid #000;
         border-radius: 30px;
         box-shadow: 0px 0px 18px #000;
         margin-left: 20px;
     }
-    
-    .best-title-container{
+
+    .best-title-container {
         margin-top: 70px;
         padding: 20px;
         display: flex;
@@ -488,21 +502,21 @@ footer{
         font-weight: bold;
         text-shadow: 0px 0px 8px #fff;
     }
-    
-    .best-videogames{
+
+    .best-videogames {
         padding: 10px;
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(100,1fr);
+        grid-template-columns: repeat(100, 1fr);
         overflow-x: scroll;
         height: 430px;
     }
-    
-    .best-videogames::-webkit-scrollbar{
+
+    .best-videogames::-webkit-scrollbar {
         display: none;
     }
-    
-    .videogame-container{
+
+    .videogame-container {
         width: 15rem;
         background-color: rgba(135, 102, 188, 0.1);
         height: 350px;
@@ -513,19 +527,19 @@ footer{
         border-radius: 20px;
         transition: transform 0.3s ease;
     }
-    
-    
-    .videogame-container:hover{
+
+
+    .videogame-container:hover {
         transform: scale(1.05);
     }
-    
-    .videogame-container img{
+
+    .videogame-container img {
         width: 100%;
         height: 250px;
         border-radius: 20px;
     }
-    
-    .videogame-title{
+
+    .videogame-title {
         display: flex;
         width: 100%;
         height: 50px;
@@ -539,8 +553,8 @@ footer{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
     }
-    
-    .price-heart{
+
+    .price-heart {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -549,14 +563,14 @@ footer{
         padding-right: 10px;
         box-sizing: border-box;
     }
-    
-    #heart{
+
+    #heart {
         width: 10%;
         height: 10%;
         cursor: pointer;
     }
-    
-    .coming-soon{
+
+    .coming-soon {
         width: 100%;
         padding: 10px;
         display: flex;
@@ -567,22 +581,22 @@ footer{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
     }
-    
-    .comming-soon-games{
+
+    .comming-soon-games {
         display: flex;
     }
-    
-    .comming-soon-games::-webkit-scrollbar{
+
+    .comming-soon-games::-webkit-scrollbar {
         display: none;
     }
-    
-    .more-info{
+
+    .more-info {
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
-    
-    .more-info-title{
+
+    .more-info-title {
         margin-top: 20px;
         padding: 10px;
         display: flex;
@@ -591,16 +605,16 @@ footer{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-shadow: 0px 0px 8px #fff;
     }
-    
-    .more-info-containers{
+
+    .more-info-containers {
         padding: 3rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-left: 4em;
         padding-right: 3em;
     }
-    
-    .more-info-container{
+
+    .more-info-container {
         padding: 10px;
         background-color: rgb(44, 26, 71);
         margin: 20px;
@@ -609,34 +623,34 @@ footer{
         justify-content: center;
         align-items: center;
         cursor: pointer;
-    
+
     }
-    
-    .more-info-image{
+
+    .more-info-image {
         grid-column: span 2;
         display: flex;
     }
-    
-    .more-info-image img{
+
+    .more-info-image img {
         margin-right: 40px;
     }
-    
-    footer{
+
+    footer {
         display: flex;
         flex-direction: column;
         margin-top: 50px;
     }
-    
-    .footer-image-container{
+
+    .footer-image-container {
         display: flex;
         justify-content: center;
     }
-    
-    .footer-image-container img{
+
+    .footer-image-container img {
         width: 3rem;
     }
-    
-    .footer-info{
+
+    .footer-info {
         margin-top: 20px;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -645,8 +659,8 @@ footer{
         column-gap: 10px;
         row-gap: 10px;
     }
-    
-    .footer-card{
+
+    .footer-card {
         background-color: rgb(27, 14, 48);
         padding: 10px;
         margin: 10px;
@@ -657,49 +671,50 @@ footer{
         align-items: center;
         cursor: pointer;
     }
-    
-    .footer-card img{
+
+    .footer-card img {
         width: 10%;
         margin: 15px;
     }
 }
 
-@media (min-width: 801px) and (max-width: 1024px){
+@media (min-width: 801px) and (max-width: 1024px) {
+
     /*Solo para saber si se esta usando el mediaquery*/
-    body{
+    body {
         overflow-x: hidden;
     }
-    
-    header{
+
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: rgb(19,13,29);
+        background-color: rgb(19, 13, 29);
         opacity: 1;
     }
-    
-    .logo-container img{
+
+    .logo-container img {
         width: 40%;
         padding: 10px;
     }
-    
-    header h1{
+
+    header h1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 2.5rem;
     }
-    
-    .menu-icon img{
+
+    .menu-icon img {
         width: 3.1rem;
         cursor: pointer;
     }
-    
-    .welcome-container{
+
+    .welcome-container {
         margin-top: 100px;
         display: flex;
         justify-content: space-between;
     }
-    
-    .welcome-text{
+
+    .welcome-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -713,24 +728,24 @@ footer{
         border-style: dashed;
         border-color: rgb(139, 91, 216);
     }
-    
-    .welcome-text p{
+
+    .welcome-text p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         font-size: 2rem;
         width: 100%;
         margin-left: 60px;
     }
-    
-    .welcome-image img{
+
+    .welcome-image img {
         width: 100%;
         border: 1px solid #000;
         border-radius: 30px;
         box-shadow: 0px 0px 18px #000;
         margin-left: 40px;
     }
-    
-    .best-title-container{
+
+    .best-title-container {
         margin-top: 70px;
         padding: 20px;
         display: flex;
@@ -741,21 +756,21 @@ footer{
         font-weight: bold;
         text-shadow: 0px 0px 8px #fff;
     }
-    
-    .best-videogames{
+
+    .best-videogames {
         padding: 10px;
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(100,1fr);
+        grid-template-columns: repeat(100, 1fr);
         overflow-x: scroll;
         height: 430px;
     }
-    
-    .best-videogames::-webkit-scrollbar{
+
+    .best-videogames::-webkit-scrollbar {
         display: none;
     }
-    
-    .videogame-container{
+
+    .videogame-container {
         width: 15rem;
         background-color: rgba(135, 102, 188, 0.1);
         height: 400px;
@@ -766,19 +781,19 @@ footer{
         border-radius: 20px;
         transition: transform 0.3s ease;
     }
-    
-    
-    .videogame-container:hover{
+
+
+    .videogame-container:hover {
         transform: scale(1.05);
     }
-    
-    .videogame-container img{
+
+    .videogame-container img {
         width: 100%;
         height: 250px;
         border-radius: 20px;
     }
-    
-    .videogame-title{
+
+    .videogame-title {
         display: flex;
         width: 100%;
         height: 50px;
@@ -792,8 +807,8 @@ footer{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
     }
-    
-    .price-heart{
+
+    .price-heart {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -802,14 +817,14 @@ footer{
         padding-right: 10px;
         box-sizing: border-box;
     }
-    
-    #heart{
+
+    #heart {
         width: 10%;
         height: 10%;
         cursor: pointer;
     }
-    
-    .coming-soon{
+
+    .coming-soon {
         width: 100%;
         padding: 10px;
         display: flex;
@@ -820,22 +835,22 @@ footer{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
     }
-    
-    .comming-soon-games{
+
+    .comming-soon-games {
         display: flex;
     }
-    
-    .comming-soon-games::-webkit-scrollbar{
+
+    .comming-soon-games::-webkit-scrollbar {
         display: none;
     }
-    
-    .more-info{
+
+    .more-info {
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
-    
-    .more-info-title{
+
+    .more-info-title {
         margin-top: 20px;
         padding: 10px;
         display: flex;
@@ -844,16 +859,16 @@ footer{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-shadow: 0px 0px 8px #fff;
     }
-    
-    .more-info-containers{
+
+    .more-info-containers {
         padding: 3rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-left: 5rem;
         padding-right: 5rem;
     }
-    
-    .more-info-container{
+
+    .more-info-container {
         padding: 10px;
         background-color: rgb(44, 26, 71);
         margin: 20px;
@@ -862,35 +877,35 @@ footer{
         justify-content: center;
         align-items: center;
         cursor: pointer;
-    
+
     }
-    
-    .more-info-image{
+
+    .more-info-image {
         grid-column: span 2;
         display: flex;
     }
-    
-    .more-info-image img{
+
+    .more-info-image img {
         margin-right: 40px;
     }
-    
-    footer{
+
+    footer {
         display: flex;
         flex-direction: column;
         margin-top: 50px;
         width: 100%;
     }
-    
-    .footer-image-container{
+
+    .footer-image-container {
         display: flex;
         justify-content: center;
     }
-    
-    .footer-image-container img{
+
+    .footer-image-container img {
         width: 3rem;
     }
-    
-    .footer-info{
+
+    .footer-info {
         margin-top: 20px;
         padding-left: 5rem;
         padding-right: 5rem;
@@ -899,8 +914,8 @@ footer{
         column-gap: 10px;
         row-gap: 10px;
     }
-    
-    .footer-card{
+
+    .footer-card {
         background-color: rgb(27, 14, 48);
         padding: 10px;
         margin: 10px;
@@ -911,69 +926,69 @@ footer{
         align-items: center;
         cursor: pointer;
     }
-    
-    .footer-card img{
+
+    .footer-card img {
         width: 10%;
         margin: 15px;
     }
 }
 
-@media (max-width: 679px) and (min-width: 500px){
-    .logo-container{
+@media (max-width: 679px) and (min-width: 500px) {
+    .logo-container {
         width: 120px;
     }
-    
-    header{
+
+    header {
         padding: 0;
     }
 
-    header h1{
+    header h1 {
         margin-right: 35px;
         font-size: 40px;
     }
 }
 
-@media (min-width: 430px) and (max-width: 450px){
-    
-    .welcome-image img{
+@media (min-width: 430px) and (max-width: 450px) {
+
+    .welcome-image img {
         margin-left: 10px;
         margin-right: 25px;
         height: 170px;
     }
 
-    #login-form{
+    #login-form {
         width: 70%;
     }
 
-    .coming-soon p{
+    .coming-soon p {
         font-size: 30px;
     }
 
-    .best-title-container p{
+    .best-title-container p {
         display: flex;
         align-items: center;
         font-size: 30px;
     }
 
-    header h1{
+    header h1 {
         margin-left: 0px;
         margin-right: 25px;
         font-size: 30px;
     }
 
-    .welcome-text{
+    .welcome-text {
         margin-top: 20px;
     }
 
-    .welcome-text p{
+    .welcome-text p {
         font-size: 19px;
     }
 
-    .more-info-containers{
+    .more-info-containers {
         padding: 1rem;
     }
 
-    .best-videogames{
+    .best-videogames {
         height: 350px;
         height: 10%;
     }

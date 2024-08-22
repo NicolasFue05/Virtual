@@ -11,30 +11,9 @@
                 "../GraphicalResouces/TheLastOfUs/TheLastOfUs2-image4.jpg"
             ],
             "developers": "Naughty Dog",
-            "game-description": "Disfruta del juego ganador de más de 300 premios Game of the Year, remasterizado para la consola PlayStation®5. Vuelve a vivir o juega por primera vez la historia de Ellie y Abby, ahora con mejoras gráficas, nuevos modos de juego, como la experiencia de supervivencia roguelike Sin retorno, integración completa del control inalámbrico DualSense® y más. Cinco años después de su peligroso viaje a través de unos Estados Unidos pospandemia, Ellie y Joel logran establecerse en Jackson, Wyoming. Vivir entre una próspera comunidad de sobrevivientes les ha concedido paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros sobrevivientes más desesperados. Cuando un evento violento interrumpe esa paz, Ellie se embarca en un viaje incesante para obtener justicia y llegar a un cierre.",
-            "normal-price": "250.000",
-            "member-price": "220.00",
-            "players": "1 Player",
-            "platforms": [
-                "PlayStation®4",
-                "PlayStation®5"
-            ],
-            "wifi": "No wifi required"
-        },
-        {
-            "name": "Dark Souls 3",
-            "frontPage": "https://static.bandainamcoent.eu/high/dark-souls/dark-souls-3/00-page-setup/ds3_game-thumbnail.jpg",
-            "images": [
-                "https://www.somosxbox.com/wp-content/uploads/2015/08/dark-souls-3.jpg",
-                "https://media.gq-magazine.co.uk/photos/5d13ae679fa6014038839ef1/16:9/w_2560%2Cc_limit/red-dead-redemption-03-22oct18_b.jpg",
-                "https://i.guim.co.uk/img/media/2d354177b10ffe5e8c90190e6cf459fe78096805/534_8_3253_1953/master/3253.jpg?width=700&quality=85&auto=format&fit=max&s=5aa48e7c0e251bb1e0c309624d5c2fdd",
-                "https://i.blogs.es/245247/010416-darksouls3-review/1366_2000.jpg",
-                "https://www.pluggedin.com/wp-content/uploads/2020/01/Dark-Souls-III-review-image638x366-1024x587.jpeg"
-            ],
-            "developers": "Naughty Dog",
-            "game-description": "Disfruta del juego ganador de más de 300 premios Game of the Year, remasterizado para la consola PlayStation®5. Vuelve a vivir o juega por primera vez la historia de Ellie y Abby, ahora con mejoras gráficas, nuevos modos de juego, como la experiencia de supervivencia roguelike Sin retorno, integración completa del control inalámbrico DualSense® y más. Cinco años después de su peligroso viaje a través de unos Estados Unidos pospandemia, Ellie y Joel logran establecerse en Jackson, Wyoming. Vivir entre una próspera comunidad de sobrevivientes les ha concedido paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros sobrevivientes más desesperados. Cuando un evento violento interrumpe esa paz, Ellie se embarca en un viaje incesante para obtener justicia y llegar a un cierre.",
-            "normal-price": "250.000",
-            "member-price": "220.00",
+            "gameDescription": "Disfruta del juego ganador de más de 300 premios Game of the Year, remasterizado para la consola PlayStation®5. Vuelve a vivir o juega por primera vez la historia de Ellie y Abby, ahora con mejoras gráficas, nuevos modos de juego, como la experiencia de supervivencia roguelike Sin retorno, integración completa del control inalámbrico DualSense® y más. Cinco años después de su peligroso viaje a través de unos Estados Unidos pospandemia, Ellie y Joel logran establecerse en Jackson, Wyoming. Vivir entre una próspera comunidad de sobrevivientes les ha concedido paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros sobrevivientes más desesperados. Cuando un evento violento interrumpe esa paz, Ellie se embarca en un viaje incesante para obtener justicia y llegar a un cierre.",
+            "normalPrice": "250.000",
+            "memberPrice": "220.00",
             "players": "1 Player",
             "platforms": [
                 "PlayStation®4",
@@ -52,9 +31,9 @@
                 "https://imagenes.heraldo.es/files/image_1920_1080/uploads/imagenes/2018/11/02/_RDR2Screenshot001_99629fb2.jpg"
             ],
             "developers": "Rockstar Games",
-            "game-description": "Red Dead Redemption 2 es un mundo abierto que retrata la vida de un forajido en el Salvaje Oeste. Con gráficos impresionantes y una narrativa inmersiva, experimenta la vida de Arthur Morgan mientras lucha por sobrevivir...",
-            "normal-price": "200.000",
-            "member-price": "180.000",
+            "gameDescription": "Red Dead Redemption 2 es un mundo abierto que retrata la vida de un forajido en el Salvaje Oeste. Con gráficos impresionantes y una narrativa inmersiva, experimenta la vida de Arthur Morgan mientras lucha por sobrevivir...",
+            "normalPrice": "200.000",
+            "memberPrice": "180.000",
             "players": "1 Player, Online Multiplayer",
             "platforms": [
                 "PlayStation®4",
@@ -62,6 +41,26 @@
                 "PC"
             ],
             "wifi": "Wifi required for multiplayer"
+        },
+        {
+            "name": "Hades",
+            "frontPage": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/capsule_616x353.jpg",
+            "images": [
+                "https://generacionxbox.com/wp-content/uploads/2020/12/hades-generacion-xbox-1024x576.jpg",
+                "https://img.asmedia.epimg.net/resizer/v2/V27VHYE4TZJ5VKGENK3HWWHCNU.jpg?auth=d8a4bdcbaeebaa8eef04f059c63e0fd3fbfedc61feaa7921aee9fee950d3b859&width=1472&height=828&smart=true",
+                "https://assets1.ignimgs.com/2020/09/29/switch-hades-screenshot-1-1601347618163.jpg",
+                "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/09/hades-2073493.jpg?tf=3840x"
+            ],
+            "developers": "Supergiant Games",
+            "gameDescription": "Hades es un videojuego de acción y roguelike que te pone en el papel de Zagreus, el hijo de Hades, tratando de escapar del inframundo. Combina una narrativa envolvente con un dinámico combate en tiempo real.",
+            "normalPrice": "20.000",
+            "memberPrice": "18.000",
+            "players": "1 Player",
+            "platforms": [
+                "PC",
+                "Nintendo Switch"
+            ],
+            "wifi": "No wifi required"
         }
     ]
 }

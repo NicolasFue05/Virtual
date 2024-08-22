@@ -12,15 +12,12 @@ body {
 }
 
 header {
-    background-color: rgb(15, 9, 25);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(15, 9, 25);
+    color: #fff;
 }
 
 main {
@@ -48,95 +45,93 @@ main {
     color: #fff;
 }
 
-/* Vanished */
-.main-animation {
-    animation: vanished-main 1s ease 0s 1 forwards;
-    opacity: 0;
-    /* Usa opacity en lugar de display */
-    visibility: hidden;
-    /* Esconde el menú después de la animación */
-}
-
-/* Menú: Posicionamiento y Estilo */
-#menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: none;
-    box-shadow: 0px 0px 8px rgb(97, 51, 172);
-    background-color: rgb(19, 13, 29);
-    /* Color de fondo que ya tenías */
-    z-index: 1000;
-    /* Asegúrate de que esté encima de otros elementos */
-}
-
+/* Menu button styles */
 .menu-icon {
     background-color: rgb(19, 13, 29);
     border: none;
-}
-
-/* Estilo del Menú Lista */
-#menu-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    color: #fff;
+    width: 3.1rem;
+    position: fixed;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
+    z-index: 1000;
 }
 
-#menu-list:hover {
-    color: #ffffff8d;
+.menu-icon {
+    width: 3.1rem;
 }
 
-/* Animación del Menú */
+/* Menu icon bar styles */
+.menu-icon-bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+}
+
+/* Menu styles */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgb(19, 13, 29);
+    color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+
+.menu.show {
+    transform: translateX(0);
+}
+
+.menu-list {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu-list li {
+    margin: 40px;
+    margin-bottom: 20px;
+}
+
+.menu-list a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Animations */
 .menu-animation {
-    animation: menu-slide 2s ease 0s 1 forwards;
+    animation: slide-in 0.3s forwards;
 }
 
 .slide-back {
-    animation: slide-back 2s ease 0s 1 forwards;
+    animation: slide-out 0.3s forwards;
 }
 
-@keyframes menu-slide {
+@keyframes slide-in {
     from {
-        opacity: 0.4;
-        margin-left: 1800px;
+        transform: translateX(100%);
     }
 
     to {
-        opacity: 1;
-        margin-left: 0px;
+        transform: translateX(0);
     }
 }
 
-/* AGREGAR MENU SLIDEBACK PARA CUANDO SE TOQUE EL BOTON DE GUARDAR MENU*/
-@keyframes slide-back {
+@keyframes slide-out {
     from {
-        opacity: 1;
-        margin-left: 0px;
+        transform: translateX(0);
     }
 
     to {
-        opacity: 0;
-        margin-left: 1800px;
+        transform: translateX(100%);
     }
-}
-
-/* Estilo de los Enlaces del Menú */
-.menu-link {
-    color: #fff;
-    padding: 80px;
-    font-size: 150%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    cursor: pointer;
-}
-
-.menu-link:hover {
-    color: #ffffff8d;
 }
 
 #cart-icon {

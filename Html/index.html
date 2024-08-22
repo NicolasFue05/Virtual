@@ -9,21 +9,29 @@
 </head>
 
 <body>
-    
+
     <!--add loading animation-->
     <main>
         <header>
-            <div class="logo-container" >
+            <div class="logo-container">
                 <img src="../GraphicalResouces/Main/Logo.png" alt="Logo Image">
             </div>
             <h1>Virtual Vortex</h1>
-            <button class="menu-icon"  onclick="showMenu()">
-                <img  id="menubtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFFJREFUSEvtlEkKADAIA83/H52eu1APZQShnquTBaqAR/D9+IA04fqIbDuVdXkgaRK9OcABL+pPu/Ud4A7wDnAAHlF/AN4BDujfwXewJoD/pgNrVBgZX2h0sgAAAABJRU5ErkJggg==" />
+            <button class="menu-icon">
+                <img id="menubtn"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFFJREFUSEvtlEkKADAIA83/H52eu1APZQShnquTBaqAR/D9+IA04fqIbDuVdXkgaRK9OcABL+pPu/Ud4A7wDnAAHlF/AN4BDujfwXewJoD/pgNrVBgZX2h0sgAAAABJRU5ErkJggg==" />
             </button>
         </header>
-    
-        
-    
+        <!-- Menu -->
+        <nav id="menu" class="menu">
+            <ul id="menu-list" class="menu-list">
+                <li><a href="../Html/cart.html">Cart</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
         <section class="welcome-container">
             <div class="welcome-text">
                 <p>The Best in VideoGames</p>
@@ -32,58 +40,28 @@
                 <img src="../GraphicalResouces/Main/Welcome.png" alt="Welcome Image">
             </div>
         </section>
-    
-        
-    
+
+
+
         <div class="best-title-container">
             <p>The Best of Video Games</p>
         </div>
-    
+
         <section class="best-videogames">
-            
-            <a href="../Html/TLOF.html" style="text-decoration: none; color: #fff;">
-                <div class="videogame-container">
-                    <img src="../GraphicalResouces/TheLastOfUs/TheLastOfUs2FrontPageIndex.jpg" alt="" class="videogame-image">
-                    <p class="videogame-title">The Last of Us 2</p>
-                    <div class="price-heart">
-                        <p>$200.500</p>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvFVIGNwjAMtDeBSYBJeCYBJgEmgU2eTY5eZZc0TdqYF/pKVao6ufOdHat8+dEv48v/EADYisheRLg+TeVNVa/8BvAjIptaPHVlogDA3Q6W3HvYTxKXHiZwVlVPamxRBn7oiAi4svdoqwPX4iQ4+aZBgdnC7J+qus7TA0Aij+9m4tx3cDtTgksHTm9HGUS6DAAzp9KrqlLh2yJ00f5Hpy8Cmu5NXHioaq8yVfBrHq/TIkXIzEbiDDaXLBr8i4Bb+7pFRQUeZIvtoiqS7MnF831Lj/wG4IUOkRg4z/J+DNmXCLwVuTaRZOCTFi/d5GaSJfCJAi9qcqmqSlrAqwTWEVUlreCzBDUSU+kFLY6V2Wm6MGNYeL79GC/NrPx801jIakKMJvBFi7I5w5rQGs6ryTSt3fomBdGREarBX8BDFn1K9ALnPasZKSz6ZAAAAABJRU5ErkJggg==" id="heart"/>
-                    </div>
-                </div>
-            </a>
-            
-              
+
+
         </section>
-    
-    
-        <div class="coming-soon">
-            <p>Coming Soon</p>
-        </div>
-    
-        <section class="comming-soon-games">
-    
-            <a href="/Html/BodyCam.html"
-            style="text-decoration: none; color: #fff;">
-                <div class="videogame-container">
-                    <img src="../GraphicalResouces/Pre-Order Games/BodyCam/BodyCamFrontPage.jpg" alt="" class="videogame-image">
-                    <p class="videogame-title">Body Cam</p>
-                    <div class="price-heart">
-                        <p>$299.000</p>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvFVIGNwjAMtDeBSYBJeCYBJgEmgU2eTY5eZZc0TdqYF/pKVao6ufOdHat8+dEv48v/EADYisheRLg+TeVNVa/8BvAjIptaPHVlogDA3Q6W3HvYTxKXHiZwVlVPamxRBn7oiAi4svdoqwPX4iQ4+aZBgdnC7J+qus7TA0Aij+9m4tx3cDtTgksHTm9HGUS6DAAzp9KrqlLh2yJ00f5Hpy8Cmu5NXHioaq8yVfBrHq/TIkXIzEbiDDaXLBr8i4Bb+7pFRQUeZIvtoiqS7MnF831Lj/wG4IUOkRg4z/J+DNmXCLwVuTaRZOCTFi/d5GaSJfCJAi9qcqmqSlrAqwTWEVUlreCzBDUSU+kFLY6V2Wm6MGNYeL79GC/NrPx801jIakKMJvBFi7I5w5rQGs6ryTSt3fomBdGREarBX8BDFn1K9ALnPasZKSz6ZAAAAABJRU5ErkJggg==" id="heart"/>  
-                    </div>
-                </div>
-            </a>
-    
-        </section>
-    
+
+        <!--add a info container and a video-->
+
         <!--More Info Section-->
         <section class="more-info">
-    
+
             <div class="more-info-title">
                 <h1>More</h1>
             </div>
             <div class="more-info-containers">
-                
+
                 <div class="more-info-container">
                     <h1>Todos los juegos</h1>
                 </div>
@@ -97,22 +75,23 @@
                     <h1>News</h1>
                 </div>
                 <div class="more-info-container more-info-image">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZVJREFUSEu1VdFxwjAMlRx+egFzbBAmIWwCk5ROAp2EMEnTCTgMXH/qqLWbgGNkh5TDv7b05KenJ4QnH3xyfugEOB6PuaiqnBBnCJADQAkABRB9VkIUo9GoiBUZBPja7zOdJOs6aSxHKbSev0wmBvjmsAAnpRYIsO5BXwlE7+l4vPJjbgD+kfyak+jNB2kBGFqqJPnoUbn/9IauFsBJqW2Q87o6W4QQC0B85QohgGIo5by5uwDEqCGA5VDKjZsw9r5CnDfqugCcD4dVqCqh9dRXSZROpxdXAKWMahbctzkA8+6sFHXR5AKY5mZsgxl1dKitTKWcmlz3AZjprXXe1eSmwFRKm9ttclhB/XW7SaVctn8QabLxHwIo8c+HmsP2y15yTbamRrT1i+Ukat7UXpVzluLGRAfN1XOIJV+uwUFrqvKsIuqUnOP6kr7H7Kz/E8Au0dp6//dgkJkd4Q8m92PWrmNTHRQUMystFfmB9y4cw3mi9bLXwnHBjLqQKEOA2S9VZmWClSzR7qGV2X+2+IjOpf8o0A/cROkZpqGufwAAAABJRU5ErkJggg=="/>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZVJREFUSEu1VdFxwjAMlRx+egFzbBAmIWwCk5ROAp2EMEnTCTgMXH/qqLWbgGNkh5TDv7b05KenJ4QnH3xyfugEOB6PuaiqnBBnCJADQAkABRB9VkIUo9GoiBUZBPja7zOdJOs6aSxHKbSev0wmBvjmsAAnpRYIsO5BXwlE7+l4vPJjbgD+kfyak+jNB2kBGFqqJPnoUbn/9IauFsBJqW2Q87o6W4QQC0B85QohgGIo5by5uwDEqCGA5VDKjZsw9r5CnDfqugCcD4dVqCqh9dRXSZROpxdXAKWMahbctzkA8+6sFHXR5AKY5mZsgxl1dKitTKWcmlz3AZjprXXe1eSmwFRKm9ttclhB/XW7SaVctn8QabLxHwIo8c+HmsP2y15yTbamRrT1i+Ukat7UXpVzluLGRAfN1XOIJV+uwUFrqvKsIuqUnOP6kr7H7Kz/E8Au0dp6//dgkJkd4Q8m92PWrmNTHRQUMystFfmB9y4cw3mi9bLXwnHBjLqQKEOA2S9VZmWClSzR7qGV2X+2+IjOpf8o0A/cROkZpqGufwAAAABJRU5ErkJggg==" />
                     <h1>Services</h1>
                 </div>
-    
+
             </div>
-    
+
         </section>
-    
+
         <!--Footer container-->
-    
-         <footer>
+
+        <footer>
             <div class="footer-image-container">
                 <img src="../GraphicalResouces/Main/Logo.png" alt="Logo Virtual Vortex">
             </div>
             <div class="footer-info">
-    
+
                 <div class="footer-card">
                     <p>Contact</p>
                 </div>
@@ -137,24 +116,10 @@
                 <div class="footer-card copyright">
                     <p>© Copyright</p>
                 </div>
-    
-            </div>
-         </footer>
-    </main>
 
-    <section id="menu" >
-        <ul id="menu-list">
-            <li style="list-style: none;" class="menu-link" >
-                <a href="./index.html" style="text-decoration: none; color: #fff;">Home</a>
-            </li>
-            <li style="list-style: none;" class="menu-link">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATtJREFUSEvNlT1WAkEQhKtyDyGht5BjQCShgSaagwcg0cxEjDyG3MIQDmFebvN29rXDzo+L63PCZbe/qq7ugRj5cOT6+DuAJLVu9gBeSa5+w13nwAFC3SnJ7amQoxZJugLwAmBLcjoG4BzAri18sovekCWZA3My9OxJTuzjFMC7GALJA6yipPcmh0sAC5KbGopz/hCmMLkHLuxOTQniJnFC0sY9vWiSfhS2E7QhuQhispvc7J4t2xLAt4/6nKRaWgIEF8U2hfawab4XULyLnLIuuNhBzmkNwCbJJqrmHC1mEdCObMgiB+m9WmoBFyQ/JJ2R/PSU8EzS4Z1YQS3gEcANgDeS81DEigN4BjAD8ETydigg/FcgnhJ/zce/ZRctUmkZ3MUqrS0Arlt366Z994Mc1IxP6p2qDP414AvzeZAZW2j9mQAAAABJRU5ErkJggg=="/ id="cart-icon">
-            </li>
-            <li style="list-style: none;" class="menu-link">Games</li>
-            <li style="list-style: none;" class="menu-link">Info</li>
-            <li style="list-style: none;" class="menu-link">Settings</li>
-        </ul>
-    </section>
+            </div>
+        </footer>
+    </main>
 
     <script src="../Scripts/app.js"></script>
 
