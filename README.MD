@@ -1,89 +1,102 @@
+# Virtual Vortex - Tienda Virtual de Videojuegos Orientada a Móviles
 
-Copiar código
-# Virtual Vortex
+## Descripción
+Virtual Vortex es una tienda virtual de videojuegos diseñada para dispositivos móviles, con un estilo Cyberpunk utilizando una paleta de colores que va desde el negro hasta tonos morados. La página ofrece una experiencia de usuario inmersiva y funcionalidades completas para explorar y adquirir videojuegos.
 
-Virtual Vortex es una aplicación web diseñada para gestionar y mostrar información sobre videojuegos. Ofrece una interfaz moderna y dinámica donde los usuarios pueden explorar diferentes juegos, ver sus detalles y precios, y navegar a través de un menú desplegable interactivo.
+## Paleta de Colores
+- Negro: #010108
+- Morado Oscuro: #20115b
+- Morado Medio Oscuro: #7232f2
+- Morado Claro: #c876ff
+- Rosado: #f9a8ff
 
-## Contenido del Repositorio
+## Fuente
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+Font Call: "Kanit", sans-serif;
 
-- **`index.html`**: La página principal que contiene la estructura HTML de la aplicación.
-- **`styles.css`**: Archivo de estilos CSS que define el diseño y la apariencia de la aplicación.
-- **`app.js`**: Archivo JavaScript que gestiona la lógica de la aplicación, incluyendo la carga de datos y la interacción del usuario.
-- **`games.json`**: Archivo JSON que contiene la información de los juegos, como nombres, imágenes, precios, y descripciones.
+## Estructura y Diseño
 
-## Características
+### Cabecera
+- **Logo de la tienda:** Izquierda de la cabecera.
+- **Nombre de la tienda:** Centro de la cabecera.
+- **Menú desplegable:** Derecha de la cabecera con opciones:
+  - Inicio
+  - Videojuegos
+  - Carrito
+  - Configuración
 
-- **Visualización de Juegos**: Muestra tarjetas con detalles de juegos, incluyendo la portada, nombre, y precio.
-- **Menú Desplegable**: Un menú animado que se oculta y muestra al hacer clic en el ícono del menú.
-- **Diseño Responsivo**: Adaptable a diferentes tamaños de pantalla para una experiencia óptima en dispositivos móviles y de escritorio.
+### Carrito de Compras
+- Maquetación con al menos 2 productos.
 
-## Instalación
+### Sección Principal
+- **Imagen de videojuego:** Ocupa toda una sección del main.
+- **Texto de bienvenida:** A la izquierda por encima de la imagen.
 
-Para utilizar la aplicación localmente, sigue estos pasos:
+### Productos Destacados
+- **4 productos (videojuegos):** Cada uno con:
+  - Imagen de portada
+  - Nombre completo
+  - Fecha de publicación
+  - Precio
 
-1. **Clona el Repositorio**:
+#### Detalle del Producto
+- Al menos 3 imágenes y 1 video para mostrar detalles.
+- Opción para agregar al carrito de compras con animación de chulito.
+- Nombre del producto.
+- Descripción del producto.
+- Precio del producto:
+  - Precio Normal
+  - Descuento de Afiliado
+- Opción para agregar a favoritos (corazón).
+- PEGI del juego:
+  - Juego online
+  - Jugadores (1-4)
+  - Dispositivos compatibles
+  - Idiomas disponibles
+- Calificaciones globales.
+- Otros 5 productos como recomendaciones.
+- Copyright del videojuego.
 
-   ```bash
-   git clone https://github.com/NicolasFue05/Virtual.git
+### Próximos a Mostrar
+- **2 productos próximos:**
+  - Imagen de portada del videojuego.
+  - Nombre completo del videojuego.
+  - Indicación de pre-order con fecha de salida.
+  - Precio del videojuego.
 
-2. **Navega al Directorio del Proyecto**:
+#### Detalle del Producto Próximo
+- Al menos 3 imágenes y 1 video para mostrar detalles.
+- Opción para agregar al carrito de compras con animación de chulito (botón "PRE-ORDER").
+- Nombre del producto.
+- Descripción del producto.
+- Precio del producto:
+  - Precio de orden por anticipación de videojuego.
+  - Precio Normal.
+- Opción para agregar a favoritos (corazón).
+- PEGI del juego:
+  - Juego online
+  - Jugadores (1-4)
+  - Dispositivos compatibles
+  - Idiomas disponibles
+- Otra recomendación de videojuegos nuevos.
+- Copyright del videojuego.
 
-Copiar código
+### Sección de Ver Más
+- Botones no redirigibles:
+  - Todos Los Videojuegos
+  - Descuentos
+  - Membresía a la tienda
+  - Novedades
+  - Servicio al Cliente
+
+## Instalación y Uso
+No se requiere instalación para visualizar la página web. Simplemente descarga o clona el repositorio y abre el archivo `index.html` en un navegador web compatible.
 
 ```bash
-Copiar codigo
-  cd Virtual
+git clone https://github.com/NicolasFue05/VirutalVortexApp.git
+cd VirtualVortexApp
 
-3. **Abre index.html en tu Navegador**: Simplemente abre el archivo index.html en tu navegador para ver la aplicación en funcionamiento.
 
-## Uso
-La aplicación se compone de los siguientes elementos clave:
 
-- Página Principal: index.html carga la interfaz de usuario donde se muestran las tarjetas de juegos.
-- Estilos: styles.css aplica el diseño y estilo a los elementos HTML.
-- Funcionalidad: app.js maneja la lógica de la aplicación, incluyendo la carga dinámica de datos desde games.json y la gestión del menú desplegable.
-# Visualización de Juegos
-- La aplicación carga datos sobre los juegos desde el archivo games.json.
-- Cada tarjeta de juego incluye la portada del juego, el nombre, y el precio.
-# Menú Desplegable
-- El menú desplegable se activa al hacer clic en el ícono de menú ubicado en la parte superior derecha de la página.
-- El menú incluye enlaces a diferentes secciones como el carrito, la página de inicio, configuración y acerca de.
-- El menú tiene animaciones para una transición suave entre los estados visible y oculto.
-# Contribuciones
-Si deseas contribuir al desarrollo de Virtual Vortex, sigue estos pasos:
-
-1 -Haz un Fork del Repositorio:
-
-Haz un fork del repositorio para crear una copia personal del proyecto.
-
-2 - Crea una Rama para tu Nueva Funcionalidad:
-
-```bash
-Copiar código
-  git checkout -b feature/nueva-caracteristica
-3 - Realiza tus Cambios y Haz Commits:
-
-```bash
-Copiar código
-git commit -am 'Añadida nueva característica'
-4 - Empuja tus Cambios a tu Fork:
-
-```bash
-Copiar código
-git push origin feature/nueva-caracteristica
-5 - Crea un Pull Request:
-
-Abre un Pull Request en el repositorio principal para que tus cambios sean revisados e incorporados.
-
-# Licencia
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
-
-# Contacto
-Para cualquier pregunta o comentario, puedes contactarme:
-
-Nombre: Nicolás
-Correo: nicolasjfc05@gmail.com
-GitHub: NicolasFue05
-
-## Creation
-[NicolasFue05][https://github.com/NicolasFue05]
+## Creador 
+Creado por NicolasFue05[https://github.com/NicolasFue05]
