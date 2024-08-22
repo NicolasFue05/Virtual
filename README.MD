@@ -31,8 +31,8 @@ Para utilizar la aplicación localmente, sigue estos pasos:
 Copiar código
 
 ```bash
+Copiar codigo
   cd Virtual
-```
 
 3. **Abre index.html en tu Navegador**: Simplemente abre el archivo index.html en tu navegador para ver la aplicación en funcionamiento.
 
