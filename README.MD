@@ -89,6 +89,9 @@ Font Call: "Kanit", sans-serif;
   - Novedades
   - Servicio al Cliente
 
+## Creador 
+Creado por NicolasFue05[https://github.com/NicolasFue05]
+
 ## Instalación y Uso
 No se requiere instalación para visualizar la página web. Simplemente descarga o clona el repositorio y abre el archivo `index.html` en un navegador web compatible.
 
@@ -98,5 +101,4 @@ cd VirtualVortexApp
 
 
 
-## Creador 
-Creado por NicolasFue05[https://github.com/NicolasFue05]
+
