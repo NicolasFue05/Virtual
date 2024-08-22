@@ -28,9 +28,11 @@ Para utilizar la aplicación localmente, sigue estos pasos:
 
 2. **Navega al Directorio del Proyecto**:
 
+Copiar código
+
 ```bash
-  Copiar código
   cd Virtual
+```
 
 3. **Abre index.html en tu Navegador**: Simplemente abre el archivo index.html en tu navegador para ver la aplicación en funcionamiento.
 
